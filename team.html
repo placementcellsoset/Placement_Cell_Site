@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Cell - Guru Ghasidas Vishwavidyalaya</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100 flex flex-col min-h-screen">
+
+    <!-- Navigation Bar -->
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Dummy Logo -->
+            <div class="flex items-center">
+                <img src="https://via.placeholder.com/50" alt="Dummy Logo" class="mr-3">
+                <h1 class="text-3xl font-bold">Placement Cell</h1>
+            </div>
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-6">
+                    <li><a href="#" class="text-white hover:text-gray-200"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#for-recruiters" class="text-white hover:text-gray-200"><i class="fas fa-briefcase"></i> For Recruiters</a></li>
+                    <li><a href="#why-recruit" class="text-white hover:text-gray-200"><i class="fas fa-question-circle"></i> Why Recruit?</a></li>
+                    <li><a href="#student-team" class="text-white hover:text-gray-200"><i class="fas fa-users"></i> Student Team</a></li>
+                    <li><a href="#contact-us" class="text-white hover:text-gray-200"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- Mobile Menu Icon -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="bg-blue-600 text-white hidden md:hidden">
+        <ul class="flex flex-col space-y-2 p-4">
+            <li><a href="#" class="hover:text-gray-200"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#for-recruiters" class="hover:text-gray-200"><i class="fas fa-briefcase"></i> For Recruiters</a></li>
+            <li><a href="#why-recruit" class="hover:text-gray-200"><i class="fas fa-question-circle"></i> Why Recruit?</a></li>
+            <li><a href="#student-team" class="hover:text-gray-200"><i class="fas fa-users"></i> Student Team</a></li>
+            <li><a href="#contact-us" class="hover:text-gray-200"><i class="fas fa-envelope"></i> Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto flex-grow mt-8 px-6 md:px-12 min-h-[100vh]">
+        <section id="student-team" class="flex flex-col space-y-4">
+            <h2 class="text-2xl font-semibold mb-4">Team Members</h2>
+
+            <!-- Search and Entries Per Page -->
+            <div class="flex justify-between mb-4">
+                <div>
+                    <label for="entries-per-page" class="mr-2">Show entries:</label>
+                    <select id="entries-per-page" class="border border-gray-300 px-2 py-1">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="search" class="mr-2">Search:</label>
+                    <input type="text" id="search" class="border border-gray-300 px-2 py-1">
+                </div>
+            </div>
+
+            <!-- Student Cards (using Flexbox/Grid) -->
+            <div id="student-table-body" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Dynamic content from JSON will be loaded here -->
+            </div>
+
+            <!-- Pagination Controls -->
+            <div class="flex justify-between items-center mt-4">
+                <div class="flex space-x-2">
+                    <button id="prev-page" class="bg-blue-600 text-white px-3 py-1 rounded" title="Previous">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button id="next-page" class="bg-blue-600 text-white px-3 py-1 rounded" title="Next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div id="pagination-numbers" class="flex space-x-2"></div>
+                <p id="pagination-info" class="text-sm"></p>
+            </div>
+        </section>
+        <div class="h-16"></div> <!-- Added space between pagination and footer -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center p-4">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between space-y-4 md:space-y-0">
+            <div>
+                <h3 class="font-bold mb-2">Quick Links</h3>
+                <ul class="space-y-1">
+                    <li><a href="#" class="hover:text-gray-300">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Disclaimer</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-bold mb-2">Contact Us</h3>
+                <p>placementcell@ggv.ac.in</p>
+                <p>Phone: +91-1234567890</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-2">Website Design & Development</h3>
+                <p>Developed by Placement Cell, GGV</p>
+                <p><a href="#" class="hover:text-gray-300">Web Team</a></p>
+            </div>
+        </div>
+        <p class="mt-4">&copy; 2024 Guru Ghasidas Vishwavidyalaya. All rights reserved.</p>
+    </footer>
+    
+    <script src="js/team.js"></script>
+</body>
+</html>
