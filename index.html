@@ -39,39 +39,47 @@
   </div>
 
   <header
-    class="flex justify-between items-center bg-blue-500 shadow-md sticky top-0 left-0 z-40 backdrop-blur-md h-16 w-full px-4 lg:px-8">
-    <a href="./index.html" class="flex gap-2">
+  class="flex justify-between items-center bg-blue-500 shadow-md sticky top-0 left-0 z-40 backdrop-blur-md h-16 w-full px-4 lg:px-8">
+
+  <!-- Logo -->
+  <a href="./index.html" class="flex gap-2">
       <div class="text-2xl font-bold w-72 h-full flex items-center text-white">T&P Cell - SOSET</div>
-    </a>
-    <div class="flex gap-6 md:gap-10">
+  </a>
+
+  <div class="flex gap-6 md:gap-10">
+      <!-- Hamburger Menu for Mobile -->
       <div class="flex lg:hidden items-center">
-        <button id="menu-toggle" class="text-white outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
+          <button id="menu-toggle" class="text-gray-200 focus:outline-none">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16m-7 6h7">
+                  </path>
+              </svg>
+          </button>
       </div>
-    </div>
-    <nav id="nav-links"
-      class="flex flex-col items-center lg:flex lg:flex-row lg:items-center lg:space-x-12 transition-all transform duration-500 ease-in-out">
+  </div>
+
+  <!-- Navigation Links -->
+  <nav id="nav-links"
+      class="flex flex-col items-center max-h-0 lg:max-h-full lg:flex lg:flex-row lg:items-center lg:space-x-4 lg:h-full absolute top-16 left-0 w-full bg-gray-800 bg-opacity-95 lg:bg-opacity-90 shadow-md lg:relative lg:bg-transparent lg:shadow-none lg:top-0 lg:w-auto lg:translate-x-0 transition-all transform duration-500 ease-in-out overflow-hidden xl:overflow-visible">
       <a href="./index.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-home mr-2 group-hover:text-gray-200"></i> Home
+          <i class="fas fa-home mr-2 group-hover:text-gray-200"></i> Home
       </a>
       <a href="#why-recruit" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-question-circle mr-2 group-hover:text-gray-200"></i> Why Recruit?
+          <i class="fas fa-question-circle mr-2 group-hover:text-gray-200"></i> Why Recruit?
       </a>
       <a href="#for-recruiters" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-briefcase mr-2 group-hover:text-gray-200"></i> For Recruiters
+          <i class="fas fa-briefcase mr-2 group-hover:text-gray-200"></i> For Recruiters
       </a>
       <a href="./team.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-users mr-2 group-hover:text-gray-200"></i> Student Team
+          <i class="fas fa-users mr-2 group-hover:text-gray-200"></i> Student Team
       </a>
       <a href="#contact-us" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-envelope mr-2 group-hover:text-gray-200"></i> Contact Us
+          <i class="fas fa-envelope mr-2 group-hover:text-gray-200"></i> Contact Us
       </a>
-    </nav>
-
-  </header>
+  </nav>
+</header>
 
   <section class="relative overflow-hidden h-1/2" data-aos="zoom-in-up" data-aos-duration="1500">
     <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
@@ -88,9 +96,9 @@
       </p>
       <div class="mt-6">
         <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-md" data-aos="fade-up"
-          data-aos-duration="1000">Notification App</a>
+          data-aos-duration="1000">Recruiter Login</a>
         <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-md ml-4" data-aos="fade-up"
-          data-aos-duration="1200">iOS App</a>
+          data-aos-duration="1200">Student Login</a>
       </div>
     </div>
   </section>
@@ -434,7 +442,7 @@
             <!-- Google Map iframe -->
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.824239938428!2d82.13698395531655!3d22.128700073435443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280befca3a0d2f%3A0x580096dff518fe20!2sGuru%20Ghasidas%20Vishwavidyalaya%2C%20Bilaspur!5e1!3m2!1sen!2sin!4v1729199601376!5m2!1sen!2sin"
-              width="300" height="85" class="border-0" allowfullscreen="" loading="lazy"
+              width="400" height="85" class="border-0" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <!-- Gray overlay -->
