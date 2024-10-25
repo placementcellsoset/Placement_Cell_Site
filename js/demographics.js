@@ -198,6 +198,9 @@ var branchChart = new Chart(branchCtx, {
                 selectedBranchIndex = branchIndex;
                 updateGenderDistribution(branchName);
             }
+        },
+        onResize: function (chart, size) {
+            chart.canvas.parentNode.style.height = '400px';
         }
     }
 });
@@ -264,3 +267,132 @@ function showBranchChart() {
     // Update the chart
     branchChart.update();
 }
+
+
+
+
+
+
+// Sample employers data categorized by alphabet letter
+const employers = {
+    A: ['Amazon', 'Adobe', 'Accenture', 'Apple', 'Airbnb'],
+    B: ['Boeing', 'Bosch', 'Bain & Company', 'BMW', 'BlackRock'],
+    C: ['Cisco', 'Cognizant', 'Capgemini', 'Citibank', 'Chevron'],
+    D: ['Deloitte', 'Dropbox', 'Dell', 'Disney', 'Dow Chemical'],
+    E: ['eBay', 'Ericsson', 'ExxonMobil', 'Expedia', 'Edelman'],
+    F: ['Facebook', 'Ford', 'Fidelity', 'FedEx', 'Fujitsu'],
+    G: ['Google', 'Goldman Sachs', 'General Motors', 'GE', 'Gartner'],
+    H: ['HP', 'Hewlett Packard Enterprise', 'Honeywell', 'HSBC', 'HCL'],
+    I: ['IBM', 'Intel', 'Infosys', 'IKEA', 'InterContinental Hotels'],
+    J: ['JP Morgan', 'Johnson & Johnson', 'Juniper Networks', 'Jabil', 'JetBlue'],
+    K: ['KPMG', 'Kellogg', 'Kraft Heinz', 'Kingfisher', 'Kia Motors'],
+    L: ['LinkedIn', 'Larsen & Toubro', 'Lockheed Martin', 'Lufthansa', 'Lowe\'s'],
+    M: ['Microsoft', 'Morgan Stanley', 'McKinsey & Company', 'Mastercard', 'Merck'],
+    N: ['Netflix', 'Nokia', 'Nestle', 'NVIDIA', 'Nissan'],
+    O: ['Oracle', 'OYO', 'OpenText', 'Oberoi Hotels', 'Occidental Petroleum'],
+    P: ['PayPal', 'PepsiCo', 'Philips', 'Procter & Gamble', 'Pfizer'],
+    Q: ['Qualcomm', 'Quora', 'Qatar Airways', 'Quick Heal', 'Quad'],
+    R: ['Red Hat', 'Roche', 'Raytheon', 'Royal Dutch Shell', 'Rakuten'],
+    S: ['Salesforce', 'Siemens', 'Samsung', 'Spotify', 'SpaceX'],
+    T: ['Tesla', 'Tata Consultancy Services', 'Twitter', 'Toyota', 'TikTok'],
+    U: ['Uber', 'Unilever', 'UPS', 'United Airlines', 'U.S. Bank'],
+    V: ['Visa', 'Volvo', 'Verizon', 'VMware', 'Vanguard'],
+    W: ['Walmart', 'Wipro', 'Western Union', 'Warner Bros', 'WeWork'],
+    X: ['Xerox', 'Xiaomi', 'Xilinx', 'XPO Logistics', 'Xylem'],
+    Y: ['Yahoo', 'Yamaha', 'Yandex', 'Yum Brands', 'Yellow Pages'],
+    Z: ['Zoom', 'Zebra Technologies', 'Zillow', 'Zscaler', 'Zendesk']
+};
+
+// Get reference to the container and the display elements
+const alphabetButtonsContainer = document.getElementById('alphabetButtonsContainer');
+const employerLetterTitle = document.getElementById('employerLetterTitle');
+const employersList = document.getElementById('employersList');
+
+// Keep track of the currently active button
+let activeButton = null;
+
+// Function to display employers based on the selected letter
+function displayEmployersByLetter(letter, clickedButton) {
+    // Update the title
+    employerLetterTitle.textContent = `Employers Starting With "${letter}"`;
+
+    // Clear the existing list
+    employersList.innerHTML = '';
+
+    // Populate the list with the employers under the selected letter
+    employers[letter].forEach(employer => {
+        const li = document.createElement('li');
+        li.textContent = employer;
+        employersList.appendChild(li);
+    });
+
+    // If there is an active button, reset its size
+    if (activeButton) {
+        activeButton.classList.remove('scale-110', 'bg-teal-700'); // Reset the size of the previously clicked button
+    }
+
+    // Set the clicked button as active and apply the size increase
+    clickedButton.classList.add('scale-110', 'bg-teal-700');
+    activeButton = clickedButton; // Update the active button reference
+}
+
+// Function to create the alphabet buttons dynamically
+function createAlphabetButtons() {
+    const letters = Object.keys(employers);
+
+    letters.forEach((letter, index) => {
+        const button = document.createElement('button');
+        button.textContent = letter;
+        button.className = 'bg-teal-600 hover:bg-teal-700 hover:underline text-white font-bold py-2 px-4 rounded w-12 h-12 flex items-center justify-center transition-transform transform'; // Added equal width, height, and transformation properties
+
+        // Add click event listener to each button
+        button.addEventListener('click', () => displayEmployersByLetter(letter, button));
+
+        // Append button to the container
+        alphabetButtonsContainer.appendChild(button);
+
+        // Set "A" as the active button by default
+        if (index === 0) { // The first button (for "A")
+            button.classList.add('scale-110', 'bg-teal-700'); // Make "A" button look clicked
+            activeButton = button; // Set the first button as active
+        }
+    });
+}
+
+// Initial setup: Create the alphabet buttons and display "A" employers by default
+createAlphabetButtons();
+displayEmployersByLetter('A', activeButton); // Display "A" employers by default
+
+
+
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    // navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
