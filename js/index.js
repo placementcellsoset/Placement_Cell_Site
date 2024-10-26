@@ -1,6 +1,6 @@
-AOS.init({
-    duration: 1000,
-});
+// AOS.init({
+//     duration: 1000,
+// });
 
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
@@ -59,11 +59,3 @@ function snapBackToCenter(event) {
         });
     }, 100);
 }
-
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
-
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('max-h-[1000px]');
-    console.log("clicked");
-});

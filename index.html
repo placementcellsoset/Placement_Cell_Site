@@ -13,92 +13,10 @@
 
 <body class="bg-gray-50">
 
-  <div class="container max-w-screen-2xl w-full mx-auto overflow-hidden bg-white" data-aos="fade-down"
-    data-aos-duration="1000">
-    <div class="grid grid-cols-12 items-center">
-      <!-- Logo Section -->
-      <div class="col-span-3 sm:col-span-2">
-        <div class="logo">
-          <a href="#">
-            <img src="./images/ggu_logo.png" alt="logo" class="mx-auto w-16 sm:w-24 h-auto">
-          </a>
-        </div>
-      </div>
+  <header id="header1" class="z-40"></header>
+  <header id="header2" class=" sticky top-0 left-0 z-40"></header>
 
-      <!-- Text Section -->
-      <div class="col-span-6 sm:col-span-8 text-center" data-aos="zoom-in" data-aos-duration="1500">
-        <div class="text-teal-800">
-          <!-- Hindi Text with Mobile Abbreviation -->
-          <p class="font-bold text-lg sm:text-xl">
-            <span class="sm:hidden">जी. जी. वी., बिलासपुर</span>
-            <span class="hidden sm:inline">गुरु घासीदास विश्‍वविद्यालय, बिलासपुर</span>
-          </p>
-
-          <!-- English Text with Mobile Abbreviation -->
-          <p class="font-bold text-lg sm:text-xl">
-            <span class="sm:hidden">G.G.V., Bilaspur</span>
-            <span class="hidden sm:inline">Guru Ghasidas Vishwavidyalaya, Bilaspur</span>
-          </p>
-
-          <small class="hidden sm:block text-sm">A Central University established by the Central Universities Act 2009
-            No. 25 of 2009</small>
-        </div>
-      </div>
-
-      <!-- Secondary Image Section -->
-      <div class="col-span-3 sm:col-span-2" data-aos="fade-left" data-aos-duration="1000">
-        <div class="mx-auto">
-          <img src="./images/guru_ghasidas.png" alt="image" class="mx-auto w-16 sm:w-24 h-auto">
-        </div>
-      </div>
-    </div>
-    <!-- <small class="block sm:hidden mx-auto text-sm text-center px-4 pb-4 text-teal-800">Established by the Central
-      Universities Act 2009 No. 25 of 2009</small> -->
-  </div>
-
-  <header
-    class="flex justify-between items-center bg-blue-500 shadow-md sticky top-0 left-0 z-40 backdrop-blur-md h-16 w-full px-4 lg:px-8">
-
-    <!-- Logo -->
-    <a href="./index.html" class="flex gap-2">
-      <div class="text-2xl font-bold w-72 h-full flex items-center text-white">T&P Cell - SOSET</div>
-    </a>
-
-    <div class="flex gap-6 md:gap-10">
-      <!-- Hamburger Menu for Mobile -->
-      <div class="flex lg:hidden items-center">
-        <button id="menu-toggle" class="text-gray-200 focus:outline-none">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
-            </path>
-          </svg>
-        </button>
-      </div>
-    </div>
-
-    <!-- Navigation Links -->
-    <nav id="nav-links"
-      class="flex flex-col items-center max-h-0 lg:max-h-full lg:flex lg:flex-row lg:items-center lg:space-x-4 lg:h-full absolute top-16 left-0 w-full bg-gray-800 bg-opacity-95 lg:bg-opacity-90 shadow-md lg:relative lg:bg-transparent lg:shadow-none lg:top-0 lg:w-auto lg:translate-x-0 transition-all transform duration-500 ease-in-out overflow-hidden xl:overflow-visible">
-      <a href="./index.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-home mr-2 group-hover:text-gray-200"></i> Home
-      </a>
-      <a href="./index.html#why-recruit" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-question-circle mr-2 group-hover:text-gray-200"></i> Why Recruit?
-      </a>
-      <a href="./for-recruiters.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-briefcase mr-2 group-hover:text-gray-200"></i> For Recruiters
-      </a>
-      <a href="./team.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-users mr-2 group-hover:text-gray-200"></i> Student Team
-      </a>
-      <a href="./contact.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-        <i class="fas fa-envelope mr-2 group-hover:text-gray-200"></i> Contact Us
-      </a>
-    </nav>
-  </header>
-
-  <section class="relative overflow-hidden h-[300px] max-w-screen-2xl w-full mx-auto" data-aos="zoom-in-up"
-    data-aos-duration="1500">
+  <section class="relative h-[300px] max-w-screen-2xl w-full mx-auto" data-aos="zoom-in-up" data-aos-duration="1500">
     <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
       <source src="./hero.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
@@ -112,32 +30,40 @@
         Guru Ghasidas Vishwavidyalaya, Bilaspur
       </p>
       <div class="mt-6">
-        <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-md" data-aos="fade-up"
+        <!-- <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-md" data-aos="fade-up"
           data-aos-duration="1000">Recruiter Login</a>
         <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-md ml-4" data-aos="fade-up"
-          data-aos-duration="1200">Student Login</a>
+          data-aos-duration="1200">Student Login</a> -->
+        <a href="#" class="bg-blue-500 text-white px-6 py-3 rounded-md ml-4" data-aos="fade-up"
+          data-aos-duration="1200">Hire a Talent</a>
       </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section class="py-20 px-8 md:px-16 bg-white">
+  <section class=" py-20 px-8 md:px-16 bg-white">
     <div class="container mx-auto px-4">
       <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Overview</h2>
       <p class="text-center text-lg text-gray-700 mb-6">
         The Training and Placement Cell, School of Studies of Engineering and Technology (T&P Cell, SOSET) of Guru
-        Ghasidas Vishwavidyalaya, Bilaspur, is dedicated to facilitating student placements across various disciplines,
-        including engineering, management, and sciences. The T&P Cell, SOSET collaborates with leading organizations to
+        Ghasidas Vishwavidyalaya, Bilaspur, is dedicated to facilitating student placements across various
+        disciplines,
+        including engineering, management, and sciences. The T&P Cell, SOSET collaborates with leading
+        organizations to
         provide internship and training opportunities, ensuring students are career-ready.
       </p>
       <p class="text-center text-lg text-gray-700 mb-6">
-        The placement season runs from late July to March, during which numerous companies conduct campus interviews.
-        The T&P Cell, SOSET is equipped with modern facilities for group discussions and interviews, and it organizes
+        The placement season runs from late July to March, during which numerous companies conduct campus
+        interviews.
+        The T&P Cell, SOSET is equipped with modern facilities for group discussions and interviews, and it
+        organizes
         pre-placement talks to foster interaction between students and potential employers.
       </p>
       <p class="text-center text-lg text-gray-700 mb-8">
-        A committee of student representatives from undergraduate and postgraduate programs supports the T&P Cell, SOSET
-        in developing annual policies and guidelines for the placement process. This collaboration ensures that student
+        A committee of student representatives from undergraduate and postgraduate programs supports the T&P Cell,
+        SOSET
+        in developing annual policies and guidelines for the placement process. This collaboration ensures that
+        student
         feedback is integral to decision-making.
       </p>
 
@@ -205,7 +131,8 @@
   </section>
 
   <!-- Message Section -->
-  <section class="relative flex h-[500px] max-w-screen-2xl w-full mx-auto px-8 md:px-16 space-x-2 border-2">
+  <section
+    class="relative flex overflow-auto min-w-full h-[500px] max-w-screen-2xl w-full mx-auto px-8 md:px-16 space-x-2 border-2">
     <!-- First Div -->
     <div class="relative flex-1 h-full transition-all hover:flex-[2] group overflow-hidden">
       <img src="./images/vc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
@@ -377,18 +304,16 @@
           graduates have on society—making us consistently ranked
           <span class="text-xl font-bold text-gray-800">No.1</span>.
         </p>
-        <div class="mt-6 flex space-x-4">
-          <button
-            class="px-6 py-3 bg-blue-600 text-white rounded-md shadow-lg hover:bg-blue-500 hover:scale-105 transform transition-all ease-in-out duration-300 flex items-center"
-            onclick="window.open('https://www.ggu.ac.in/SiteMap.aspx', '_blank');">
+        <div class="mt-6 flex flex-col gap-4 sm:flex-row justify-center items-center sm:justify-start">
+          <a href="https://www.ggu.ac.in/SiteMap.aspx" target="_blank"
+            class="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-md shadow-lg hover:bg-blue-500 hover:scale-105 transform transition-all ease-in-out duration-300 flex items-center">
             <i class="fas fa-info-circle mr-2"></i> Read More About GGV
-          </button>
+          </a>
 
-          <button
-            class="px-6 py-3 bg-green-600 text-white rounded-md shadow-lg hover:bg-green-500 hover:scale-105 transform transition-all ease-in-out duration-300 flex items-center"
-            onclick="window.location.href='demographics.html';">
+          <a href="./demographics.html" target="_blank"
+            class="w-full sm:w-auto px-6 py-3 bg-green-600 text-white rounded-md shadow-lg hover:bg-green-500 hover:scale-105 transform transition-all ease-in-out duration-300 flex items-center">
             <i class="fas fa-chart-pie mr-2"></i> View Detailed Demographics
-          </button>
+          </a>
         </div>
       </div>
 
@@ -574,117 +499,11 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="pt-8 px-10 bg-gray-50 h-auto w-full">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <!--Grid-->
-      <div
-        class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8 py-8 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
-        <div class="col-span-full mb-10 lg:col-span-2 lg:mb-0">
-          <a href="#" class="flex justify-center lg:justify-start font-semibold">
-            T&P Cell - SOSET
-          </a>
-          <p class="pt-4 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
-            <i class="fas fa-map-marker-alt mr-2"></i><b>Address:</b> Koni, Bilaspur, Chhattisgarh - 495009
-          </p>
-          <p class="pt-2 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
-            <i class="fas fa-phone-alt mr-2"></i><b>Phone:</b> 077522-60353
-          </p>
-          <p class="pt-2 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">
-            <i class="fas fa-envelope mr-2"></i><b>Email:</b> placement@ggv.ac.in
-          </p>
-
-          <div class="relative w-full lg:w-5/6 h-auto my-3 overflow-hidden rounded-lg shadow">
-            <!-- Google Map iframe -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1191.824239938428!2d82.13698395531655!3d22.128700073435443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280befca3a0d2f%3A0x580096dff518fe20!2sGuru%20Ghasidas%20Vishwavidyalaya%2C%20Bilaspur!5e1!3m2!1sen!2sin!4v1729199601376!5m2!1sen!2sin"
-              width="400" height="85" class="border-0" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-            <!-- Gray overlay -->
-            <div class="absolute inset-0 bg-gray-100 opacity-50 pointer-events-none"></div>
-          </div>
-          <a href="javascript:;"
-            class="py-2.5 px-5 h-9 block w-fit bg-blue-500 rounded-lg shadow-sm text-xs font-semibold text-white mx-auto transition-all  duration-500 hover:bg-blue-600 lg:mx-0">
-            Contact Us
-          </a>
-
-        </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left ">
-          <h4 class="text-lg text-gray-900 font-semibold mb-7">Quick Links</h4>
-          <ul class="text-sm  transition-all duration-500">
-            <li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Home</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Why Recruit?</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">For Recruiters</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Student Team</a></li>
-          </ul>
-        </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left ">
-          <h4 class="text-lg text-gray-900 font-semibold mb-7">Important Links</h4>
-          <ul class="text-sm  transition-all duration-500">
-            <li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">GGV Official Site</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">News & Updates</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Academic Calendar</a>
-            </li>
-            <li><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">List of Holidays-2024</a></li>
-          </ul>
-        </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left">
-          <h4 class="text-lg text-gray-900 font-semibold mb-7">Resources</h4>
-          <ul class="text-sm  transition-all duration-500">
-            <li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">FAQs</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Downloads</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Placement Brochure</a>
-            </li>
-            <li><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Past Recruiters</a></li>
-          </ul>
-        </div>
-        <!--End Col-->
-        <div class="lg:mx-auto text-left">
-          <h4 class="text-lg text-gray-900 font-semibold mb-7">More</h4>
-          <ul class="text-sm  transition-all duration-500">
-            <li class="mb-6"><a href="javascript:;" class="text-gray-600 hover:text-gray-900">Student Achievements</a>
-            </li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">T&P Socials</a></li>
-            <li class="mb-6"><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Join T&P Cell</a></li>
-            <li><a href="javascript:;" class=" text-gray-600 hover:text-gray-900">Privacy Policy</a></li>
-          </ul>
-        </div>
-      </div>
-      <!--Grid-->
-      <div class="py-7 border-t border-gray-200">
-        <div class="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
-          <span class="text-sm text-gray-500 ">&copy; 2024 GGV Placement Cell. All rights reserved | <a
-              href="#">Credits</a></span>
-          <div class="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
-            <a href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
-              <i class="fab fa-twitter text-white"></i>
-            </a>
-            <a href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
-              <i class="fab fa-facebook-f text-white"></i>
-            </a>
-            <a href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
-              <i class="fab fa-linkedin-in text-white"></i>
-            </a>
-            <a href="javascript:;"
-              class="w-9 h-9 rounded-full bg-gray-700 flex justify-center items-center hover:bg-indigo-600">
-              <i class="fab fa-youtube text-white"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-
+  <footer id="footer"></footer>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="./js/common.js"></script>
   <script src="./js/index.js"></script>
 </body>
 
