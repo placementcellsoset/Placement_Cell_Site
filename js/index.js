@@ -1,36 +1,42 @@
-// // Function to handle the hover effect
-// function handleHover(hoveredDiv) {
-//     document.querySelectorAll('.transition-width').forEach(div => {
-//         if (div === hoveredDiv) {
-//             div.classList.add('w-1/2');
-//             div.classList.remove('flex-1');
-//         } else {
-//             div.classList.add('w-1/4');
-//             div.classList.remove('flex-1');
-//         }
-//     });
-// }
+AOS.init({
+    duration: 1000,
+});
 
-// // Function to reset the divs to equal width
-// function resetDivs() {
-//     document.querySelectorAll('.transition-width').forEach(div => {
-//         div.classList.remove('w-1/2', 'w-1/4');
-//         div.classList.add('flex-1');
-//     });
-// }
-
-// // Add event listeners for each div
-// document.querySelectorAll('.transition-width').forEach(div => {
-//     div.addEventListener('mouseenter', () => handleHover(div));
-//     div.addEventListener('mouseleave', resetDivs);
-// });
-
-
-
-
-
-
-
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 8,
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        480: {    // Small mobile screens
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        640: {    // Mobile screens
+            slidesPerView: 2,
+            spaceBetween: 12,
+        },
+        768: {    // Small tablets
+            slidesPerView: 3,
+            spaceBetween: 15,
+        },
+        1024: {   // Tablets
+            slidesPerView: 4,
+            spaceBetween: 18,
+        },
+        1280: {   // Laptops and small desktops
+            slidesPerView: 4,
+            spaceBetween: 20,
+        },
+        1536: {   // Large desktops
+            slidesPerView: 5,
+            spaceBetween: 24,
+        },
+    },
+});
 
 
 
