@@ -10,19 +10,23 @@
     <link rel="stylesheet" href="dist/output.css">
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 max-w-screen-2xl mx-auto">
 
     <header id="header1" class="z-40"></header>
     <header id="header2" class=" sticky top-0 left-0 z-40"></header>
 
     <!-- Procedures & Policies Section -->
-    <section id="procedures" class="px-8 sm:px-16 my-8 sm:my-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Procedures & Policies</h2>
-        <p class="text-gray-700 text-center mb-8">
+    <section id="procedures" class="px-8 sm:px-16 py-8 sm:py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">Procedures & Policies</h2>
+        <p class="text-gray-700 text-center mb-4">
             Our Training & Placement Cell follows structured procedures to ensure smooth & transparent placement
             activities.
-            For detailed policies & regulations, please contact us directly.
+            For detailed policies & regulations, please go through our placement policy documentation or contact us
+            directly.
         </p>
+        <a href="path/to/placement-brochure.pdf" download
+            class="flex justify-center items-center gap-2 w-full sm:w-80 mx-auto mb-8 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+            <i class="fas fa-file-download mr-2"></i>Placement Policy (for company)</a>
 
         <!-- Responsive Flowchart Grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -309,30 +313,26 @@
 
 
     <!-- Placement Brochure Section -->
-    <section id="brochure" class="mb-12 px-8 lg:px-16 my-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Placement Brochure</h2>
+    <section id="brochure" class="px-8 lg:px-16 py-8 sm:py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">Placement Brochure</h2>
         <p class="text-lg text-gray-600 text-center mb-4">
             Explore our placement brochure for a detailed look at our programs, campus recruitment process, & student
             achievements etc.
         </p>
 
         <!-- Brochure Download Button -->
-        <div class="w-full flex justify-center gap-8 mb-8">
+        <div class="w-full flex flex-col sm:flex-row justify-center gap-8 mb-8">
             <!-- Current Year -->
-            <div class="flex justify-center">
-                <a href="path/to/placement-brochure.pdf" download
-                    class="inline-flex items-center w-full sm:w-60 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                    <i class="fas fa-file-download mr-2"></i>Past Year (2023-24)
-                </a>
-            </div>
+            <a href="path/to/placement-brochure.pdf" download
+                class="flex justify-center items-center gap-2 w-full sm:w-60 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-file-download mr-2"></i>Past Year (2023-24)
+            </a>
 
             <!-- Past Year -->
-            <div class="flex justify-center">
-                <a href="path/to/placement-brochure.pdf" download
-                    class="inline-flex items-center w-full sm:w-60 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                    <i class="fas fa-file-download mr-2"></i>Current Year (2024-25)
-                </a>
-            </div>
+            <a href="path/to/placement-brochure.pdf" download
+                class="flex justify-center items-center gap-2 w-full sm:w-60 px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
+                <i class="fas fa-file-download mr-2"></i>Current Year (2024-25)
+            </a>
         </div>
 
         <!-- Brochure Preview -->
@@ -346,8 +346,8 @@
 
 
     <!-- Facilities Section -->
-    <section id="facilities" class="mb-12 px-8 lg:px-16 my-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Facilities</h2>
+    <section id="facilities" class="px-8 lg:px-16 py-8 sm:py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">Facilities</h2>
         <p class="text-lg text-gray-600 text-center mb-8">The placement office is well equipped & designed to support
             the placement procedure at every stage. Arrangements for interviews, group discussions, & pre-placement
             talks are efficiently handled by our dedicated staff.</p>
@@ -425,57 +425,50 @@
     </section>
 
 
-    <!-- Know Bilaspur Section (Hotels) -->
-    <section id="hotels" class="mb-12 px-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Know Bilaspur - Nearby Hotels</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel Maa Jagdamba Palace</h3>
-                <p class="text-gray-700 text-center">3-star hotel, Mangala Rd, Vikas Nagar, Mangla, Bilaspur</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>07752357487</p>
+    <section id="hotel-list" class="flex flex-col space-y-4 px-16 py-8 sm:py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">Bilaspur - Nearby Hotels</h2>
+
+        <!-- Search and Entries Per Page -->
+        <div class="flex justify-between mb-4">
+            <div>
+                <label for="entries-per-page" class="mr-2">Show entries:</label>
+                <select id="entries-per-page" class="border border-gray-300 px-2 py-1">
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
             </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Citymall 36</h3>
-                <p class="text-gray-700 text-center">4-star hotel, Ganga Nagar, Mangla, Bilaspur</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>07752432222</p>
+            <div>
+                <label for="search" class="mr-2">Search:</label>
+                <input type="text" id="search" class="border border-gray-300 px-2 py-1">
             </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel Shivneri</h3>
-                <p class="text-gray-700 text-center">3-star hotel, Near CMD College, Vidya Nagar</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>098279 97128</p>
+        </div>
+
+        <!-- Hotel Cards (using Flexbox/Grid) -->
+        <div id="hotel-table-body" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Dynamic content from JSON will be loaded here -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="flex justify-between items-center mt-4">
+            <div class="flex space-x-2">
+                <button id="prev-page" class="bg-blue-600 text-white px-3 py-1 rounded" title="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button id="next-page" class="bg-blue-600 text-white px-3 py-1 rounded" title="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel The Emerald</h3>
-                <p class="text-gray-700 text-center">2-star hotel, Telephone Exchange Rd, Telipara</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>077524 11611</p>
-            </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel Shyama</h3>
-                <p class="text-gray-700 text-center">Near PGBT College, Tarbahar Chowk, Telipara</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>077524 21400</p>
-            </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel Raja</h3>
-                <p class="text-gray-700 text-center">Telephone Exchange Road, Old Bus Stand</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>062623 66060</p>
-            </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel Vinayak Palace</h3>
-                <p class="text-gray-700 text-center">2nd Floor, Siddhi Vinayak Shopping Arcade, Telipara</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>075090 60606</p>
-            </div>
-            <div class="bg-white shadow-md p-8 rounded-lg">
-                <h3 class="text-xl font-semibold text-center">Hotel Mayur</h3>
-                <p class="text-gray-700 text-center">2-star hotel, Old High Ct Rd, opp. Bihari Talkies</p>
-                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>077524 14094</p>
-            </div>
+            <div id="pagination-numbers" class="flex space-x-2"></div>
+            <p id="pagination-info" class="text-sm"></p>
         </div>
     </section>
 
 
+
     <!-- FAQs Section -->
-    <section id="faqs" class="mb-8 px-4 md:px-16">
-        <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">FAQs</h2>
+    <section id="faqs" class="px-4 md:px-16 py-8 sm:py-16">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center">FAQs</h2>
         <div class="flex flex-col gap-4 justify-center items-center w-full">
             <div class="w-full bg-white shadow px-6 py-4 rounded-lg cursor-pointer transition-transform duration-300 hover:shadow-md"
                 onclick="toggleAnswer(0)">
@@ -523,36 +516,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="./js/common.js"></script>
-    <script>
-        let currentlyOpen = null; // Track the currently open answer
-
-        function toggleAnswer(index) {
-            const answerContainer = document.getElementById(`answer-${index}`);
-            const icon = document.getElementById(`icon-${index}`);
-
-            if (currentlyOpen !== null) {
-                // Collapse the currently open answer if it's not the same as the one being clicked
-                if (currentlyOpen !== index) {
-                    document.getElementById(`answer-${currentlyOpen}`).style.maxHeight = null;
-                    document.getElementById(`icon-${currentlyOpen}`).classList.remove("rotate-180");
-                }
-            }
-
-            // Toggle the clicked answer
-            if (answerContainer.style.maxHeight) {
-                // Collapsing
-                answerContainer.style.maxHeight = null;
-                icon.classList.remove("rotate-180");
-                currentlyOpen = null; // Reset currently open
-            } else {
-                // Expanding
-                answerContainer.style.maxHeight = answerContainer.scrollHeight + "px";
-                icon.classList.add("rotate-180");
-                currentlyOpen = index; // Update the currently open answer
-            }
-        }
-    </script>
-
+    <script src="js/for-recruiters.js"></script>
     <style>
         .rotate-180 {
             transform: rotate(180deg);

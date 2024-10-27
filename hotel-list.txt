@@ -1,3 +1,44 @@
+
+ <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel Maa Jagdamba Palace</h3>
+                <p class="text-gray-700 text-center">3-star hotel, Mangala Rd, Vikas Nagar, Mangla, Bilaspur</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>07752357487</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Citymall 36</h3>
+                <p class="text-gray-700 text-center">4-star hotel, Ganga Nagar, Mangla, Bilaspur</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>07752432222</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel Shivneri</h3>
+                <p class="text-gray-700 text-center">3-star hotel, Near CMD College, Vidya Nagar</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>098279 97128</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel The Emerald</h3>
+                <p class="text-gray-700 text-center">2-star hotel, Telephone Exchange Rd, Telipara</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>077524 11611</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel Shyama</h3>
+                <p class="text-gray-700 text-center">Near PGBT College, Tarbahar Chowk, Telipara</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>077524 21400</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel Raja</h3>
+                <p class="text-gray-700 text-center">Telephone Exchange Road, Old Bus Stand</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>062623 66060</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel Vinayak Palace</h3>
+                <p class="text-gray-700 text-center">2nd Floor, Siddhi Vinayak Shopping Arcade, Telipara</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>075090 60606</p>
+            </div>
+            <div class="bg-white shadow-md p-8 rounded-lg">
+                <h3 class="text-xl font-semibold text-center">Hotel Mayur</h3>
+                <p class="text-gray-700 text-center">2-star hotel, Old High Ct Rd, opp. Bihari Talkies</p>
+                <p class="text-gray-700 text-center"><i class="fas fa-phone-alt mr-2"></i>077524 14094</p>
+            </div>
  <div class="bg-white shadow-md p-6 rounded-lg">
                     <h3 class="text-xl font-semibold">Hotel Surya</h3>
                     <p class="text-gray-700">Old Bus Stand Square</p>
