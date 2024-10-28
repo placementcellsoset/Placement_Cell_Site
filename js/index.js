@@ -1,9 +1,24 @@
-// AOS.init({
-//     duration: 1000,
-// });
-
 async function loadData() {
     const apiUrl = 'https://script.google.com/macros/s/AKfycbyrXCMRCX3oAB1vKyy2uOuEw3Za8l374I4x6tYvL3eG2wSTUXT9wpQ22E6uDg_5HCg8/exec';
+
+    // Initialize Swiper before data is loaded
+    new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: true,
+        },
+        breakpoints: {
+            480: { slidesPerView: 2, spaceBetween: 10 },
+            640: { slidesPerView: 2, spaceBetween: 12 },
+            768: { slidesPerView: 3, spaceBetween: 15 },
+            1024: { slidesPerView: 4, spaceBetween: 18 },
+            1280: { slidesPerView: 4, spaceBetween: 20 },
+            1536: { slidesPerView: 5, spaceBetween: 24 },
+        },
+    });
 
     try {
         // Fetch data from the API
@@ -24,32 +39,8 @@ async function loadData() {
                 img.src = item['Image Link'];
                 img.alt = item['Short Desc'];
                 slide.title = item['Short Desc'];
-
-                // Once the image loads, remove the skeleton and show the image
-                img.onload = () => {
-                    skeleton.classList.add('hidden');  // Hide skeleton
-                    img.classList.remove('hidden');    // Show image
-                };
+                img.onload = () => skeleton.classList.add('hidden');  // remove the skeleton, when the image is loaded
             }
-        });
-
-        // Initialize Swiper after data is loaded
-        new Swiper('.swiper-container', {
-            slidesPerView: 1,
-            spaceBetween: 8,
-            loop: true,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                480: { slidesPerView: 2, spaceBetween: 10 },
-                640: { slidesPerView: 2, spaceBetween: 12 },
-                768: { slidesPerView: 3, spaceBetween: 15 },
-                1024: { slidesPerView: 4, spaceBetween: 18 },
-                1280: { slidesPerView: 4, spaceBetween: 20 },
-                1536: { slidesPerView: 5, spaceBetween: 24 },
-            },
         });
 
     } catch (error) {
@@ -59,6 +50,11 @@ async function loadData() {
 
 // Call loadData to fetch data and update slides
 loadData();
+
+
+
+
+
 
 
 let containers = document.querySelectorAll(".logo-cloud");
