@@ -14,25 +14,30 @@
 <body class="bg-gray-100">
 
     <header id="header1" class="z-40"></header>
-    <header id="header2" class=" sticky top-0 left-0 z-40"></header>
+    <header id="header2" class="sticky top-0 left-0 z-40"></header>
+
+
+    <section id="announcements"></section>
+
 
     <div class="flex flex-col md:flex-row max-w-screen-2xl w-full mx-auto">
-        <aside class="bg-gray-800 w-full md:w-1/5 sticky top-16 p-4 h-auto md:h-screen overflow-y-auto">
+        <aside
+            class="bg-gray-800 md:max-h-screen md:w-1/5 sticky top-16 p-0 sm:p-4 h-auto md:h-screen overflow-y-auto z-10 hidden md:block">
             <nav class="flex flex-col space-y-4">
-                <a href="#overview" class="text-white hover:bg-blue-500 p-3 rounded-md flex items-center">
+                <a href="#overview" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
                     <i class="fas fa-chart-pie mr-2"></i>Overview</a>
-                <a href="#placement-stats" class="text-white hover:bg-blue-500 p-3 rounded-md flex items-center">
+                <a href="#placement-stats" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
                     <i class="fas fa-briefcase mr-2"></i>Placement Stats</a>
-                <a href="#branch-distribution" class="text-white hover:bg-blue-500 p-3 rounded-md flex items-center">
+                <a href="#branch-distribution" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
                     <i class="fas fa-sitemap mr-2"></i>Branch Distribution</a>
-                <a href="#alumi-placements" class="text-white hover:bg-blue-500 p-3 rounded-md flex items-center">
+                <a href="#alumi-placements" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
                     <i class="fas fa-building mr-2"></i>Alumni Placements</a>
-                <a href="#alumi-spotlight" class="text-white hover:bg-blue-500 p-3 rounded-md flex items-center">
+                <a href="#alumi-spotlight" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
                     <i class="fas fa-star mr-2"></i>Alumni Spotlight</a>
             </nav>
         </aside>
 
-        <main class="w-full md:w-4/5 p-6 space-y-6 bg-gray-50">
+        <main class="w-full md:w-4/5 p-6 space-y-6 bg-gray-100">
 
             <!-- Overview/Top Stats Section -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="overview">
@@ -285,6 +290,10 @@
         </main>
     </div>
 
+
+    <footer id="footer"></footer>
+
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>

@@ -49,6 +49,15 @@ html {
     overflow-x: hidden;
 }
 
+html::-webkit-scrollbar{
+    width: 6px;
+    background-color: #f1f1f1;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #888;
+}
+
 .marquee {
     animation: marquee 10s linear infinite;
 }
@@ -65,4 +74,11 @@ html {
 
 .transition-width {
     transition: width 0.3s ease-in-out;
+}
+
+
+/* Icon rotation */
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out;
 }

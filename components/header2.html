@@ -22,17 +22,51 @@
     <!-- Navigation Links -->
     <nav id="nav-links"
         class="flex flex-col items-center max-h-0 lg:max-h-full lg:flex lg:flex-row lg:items-center lg:space-x-6 lg:h-full absolute top-16 left-0 w-full bg-gray-800 bg-opacity-95 lg:bg-opacity-90 shadow-md lg:relative lg:bg-transparent lg:shadow-none lg:top-0 lg:w-auto lg:translate-x-0 transition-all transform duration-500 ease-in-out overflow-hidden xl:overflow-visible">
-        <a href="./index.html#why-recruit" class="py-4 flex items-center text-white hover:text-gray-200 group">
-            <i class="fas fa-question-circle mr-2 group-hover:text-gray-200"></i> Why Recruit?
-        </a>
-        <a href="./for-recruiters.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-            <i class="fas fa-briefcase mr-2 group-hover:text-gray-200"></i> For Recruiters
-        </a>
-        <a href="./team.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
+
+        <!-- Why Recruit with Dropdown -->
+        <div class="relative group h-full grid place-items-center">
+            <a href="./index.html#why-recruit" class="py-4 px-3 flex items-center text-white hover:text-gray-200 group">
+                <i class="fas fa-question-circle mr-2 group-hover:text-gray-200"></i> Why Recruit?
+                <i class="fas fa-caret-down ml-2 text-sm"></i>
+            </a>
+            <div
+                class="absolute left-0 top-full opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-500 flex flex-col bg-gray-900 text-white shadow-lg w-52 ml-20 sm:ml-0 z-50">
+                <a href="./demographics.html" class="px-5 py-3 hover:bg-gray-700">Demographics</a>
+            </div>
+        </div>
+
+        <!-- For Recruiters with Dropdown -->
+        <div class="relative group h-full grid place-items-center">
+            <a href="./for-recruiters.html" class="py-4 px-3 flex items-center text-white hover:text-gray-200 group">
+                <i class="fas fa-briefcase mr-2 group-hover:text-gray-200"></i> For Recruiters
+                <i class="fas fa-caret-down ml-2 text-sm"></i>
+            </a>
+            <div
+                class="absolute left-0 top-full opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-500 flex flex-col bg-gray-900 text-white shadow-lg w-52 ml-20 sm:ml-0 z-50">
+                <a href="./for-recruiters.html#procedures" class="px-5 py-3 hover:bg-gray-700">Procedure & Policies</a>
+                <a href="./for-recruiters.html#brochure" class="px-5 py-3 hover:bg-gray-700">Placement Brochure</a>
+                <a href="./for-recruiters.html#facilities" class="px-5 py-3 hover:bg-gray-700">Facilities</a>
+                <a href="./for-recruiters.html#hotel-list" class="px-5 py-3 hover:bg-gray-700">Nearby Hotels</a>
+                <a href="./for-recruiters.html#faqs" class="px-5 py-3 hover:bg-gray-700">FAQs</a>
+            </div>
+        </div>
+
+        <!-- Student Team -->
+        <a href="./team.html" class="py-4 px-3 flex items-center text-white hover:text-gray-200 group">
             <i class="fas fa-users mr-2 group-hover:text-gray-200"></i> Student Team
         </a>
-        <a href="./contact.html" class="py-4 flex items-center text-white hover:text-gray-200 group">
-            <i class="fas fa-envelope mr-2 group-hover:text-gray-200"></i> Contact Us
-        </a>
+
+        <!-- Contact Us with Dropdown -->
+        <div class="relative group h-full grid place-items-center">
+            <a href="./contact.html" class="py-4 px-3 flex items-center text-white hover:text-gray-200 group">
+                <i class="fas fa-envelope mr-2 group-hover:text-gray-200"></i> Contact Us
+                <i class="fas fa-caret-down ml-2 text-sm"></i>
+            </a>
+            <div
+                class="absolute left-0 top-full opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-500 flex flex-col bg-gray-900 text-white shadow-lg w-52 ml-20 sm:ml-0 z-50">
+                <a href="./contact.html#contacts" class="px-5 py-3 hover:bg-gray-700">Contacts</a>
+                <a href="./contact.html#reach-us" class="px-5 py-3 hover:bg-gray-700">Reach Us</a>
+            </div>
+        </div>
     </nav>
 </header>

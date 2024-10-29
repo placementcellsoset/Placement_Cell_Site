@@ -2,7 +2,7 @@ async function loadData() {
     const apiUrl = 'https://script.google.com/macros/s/AKfycbyrXCMRCX3oAB1vKyy2uOuEw3Za8l374I4x6tYvL3eG2wSTUXT9wpQ22E6uDg_5HCg8/exec';
 
     // Initialize Swiper before data is loaded
-    new Swiper('.swiper-container', {
+    const swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 8,
         loop: true,
@@ -19,6 +19,12 @@ async function loadData() {
             1536: { slidesPerView: 5, spaceBetween: 24 },
         },
     });
+
+    // Pause autoplay on hover
+    const swiperContainer = document.querySelector('.swiper-container');
+    swiperContainer.addEventListener('mouseenter', () => swiper.autoplay.stop());
+    swiperContainer.addEventListener('mouseleave', () => swiper.autoplay.start());
+
 
     try {
         // Fetch data from the API
