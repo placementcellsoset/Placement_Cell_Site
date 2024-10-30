@@ -1,5 +1,5 @@
 async function loadData() {
-    const apiUrl = 'https://script.google.com/macros/s/AKfycbyrXCMRCX3oAB1vKyy2uOuEw3Za8l374I4x6tYvL3eG2wSTUXT9wpQ22E6uDg_5HCg8/exec';
+    const apiUrl = 'https://script.google.com/macros/s/AKfycbw6I1F4Rl5j77EwE6r8mzOUyUlZoupvXHrLSy3ro28RZCW1HVUfd_mKUozqtkWA9bfPLg/exec?achievements=true';
 
     // Initialize Swiper before data is loaded
     const swiper = new Swiper('.swiper-container', {

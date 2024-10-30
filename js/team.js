@@ -6,6 +6,81 @@ let studentsPerPageCount = 10;
 let studentsData = [];
 let filteredData = [];
 
+// Function to render dynamic skeleton placeholders
+function renderSkeletons(count) {
+    const tableBody = document.getElementById('student-table-body');
+    tableBody.innerHTML = ''; // Clear existing content
+
+    // Create and append skeleton cards based on the count
+    for (let i = 0; i < count; i++) {
+        const skeletonCard = document.createElement('div');
+        skeletonCard.className = "skeleton-card bg-gray-200 rounded-lg p-4 animate-pulse flex flex-col space-y-4";
+        skeletonCard.innerHTML = `
+            <div class="h-6 bg-gray-300 rounded w-3/4"></div>
+            <div class="h-4 bg-gray-300 rounded w-1/2"></div>
+            <div class="h-4 bg-gray-300 rounded w-2/3"></div>
+            <div class="h-4 bg-gray-300 rounded w-1/4"></div>
+        `;
+        tableBody.appendChild(skeletonCard);
+    }
+}
+
+// Helper function to save data to Local Storage with a timestamp
+function saveDataToLocalStorage(data) {
+    const timestampedData = {
+        data,
+        timestamp: new Date().getTime()
+    };
+    localStorage.setItem('studentsData', JSON.stringify(timestampedData));
+}
+
+// Helper function to check if data is recent
+function isDataExpired(storedData, expirationInMinutes = 60) {
+    const now = new Date().getTime();
+    const expirationTime = expirationInMinutes * 60 * 1000; // Convert minutes to milliseconds
+    return now - storedData.timestamp > expirationTime;
+}
+
+// Function to load students data (from cache or API)
+function loadStudentsData() {
+    const storedData = JSON.parse(localStorage.getItem('studentsData'));
+
+    if (storedData && !isDataExpired(storedData)) {
+        // Use cached data
+        studentsData = storedData.data;
+        filteredData = studentsData;
+        renderPaginatedData();
+    } else {
+        // Show skeletons while loading data
+        renderSkeletons(studentsPerPageCount);
+
+        fetch('https://script.google.com/macros/s/AKfycbw6I1F4Rl5j77EwE6r8mzOUyUlZoupvXHrLSy3ro28RZCW1HVUfd_mKUozqtkWA9bfPLg/exec?team=true')
+            .then(response => response.json())
+            .then(data => {
+                // Map and format data
+                studentsData = data.data.map(student => ({
+                    name: student.Name,
+                    designation: student.Designation,
+                    course: student.Course,
+                    branch: student.Branch,
+                    year: student.Year,
+                    contact: student.Contact.toString(),
+                    email: student.Email
+                }));
+
+                filteredData = studentsData;
+
+                // Cache the fetched data
+                saveDataToLocalStorage(studentsData);
+
+                // Clear skeletons and render data
+                document.getElementById('student-table-body').innerHTML = '';
+                renderPaginatedData();
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    }
+}
+
 // Pagination Function
 function paginate(data, page, entriesPerPage) {
     const start = (page - 1) * entriesPerPage;
@@ -76,20 +151,16 @@ function updatePaginationNumbers() {
     }
 }
 
-// Fetch Students Data
-fetch('data/students.json')
-    .then(response => response.json())
-    .then(data => {
-        studentsData = data.students; // Adjusted to match the JSON structure
-        filteredData = studentsData;
-        renderPaginatedData();
-    });
-
 // Event Listeners for Pagination and Search
 studentsPerPage.addEventListener('change', (e) => {
     studentsPerPageCount = parseInt(e.target.value);
     currentPage = 1;
-    renderPaginatedData();
+
+    // Render skeletons based on the new entries per page count
+    renderSkeletons(studentsPerPageCount);
+
+    // Load data (will show skeletons first if data is being fetched)
+    loadStudentsData();
 });
 
 searchInput.addEventListener('input', filterData);
@@ -107,3 +178,6 @@ document.getElementById('next-page').addEventListener('click', () => {
         renderPaginatedData();
     }
 });
+
+// Initial load
+loadStudentsData();
