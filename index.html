@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GGV Placement Cell</title>
+  <title>SOSET-GGV Placement Cell</title>
 
-   <!-- Favicon -->
-   <link rel="icon" href="favicon.ico?" type="image/x-icon">
-   <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
- 
-   <!-- Stylesheets -->
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico?" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+
+  <!-- Stylesheets -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
@@ -29,6 +29,25 @@
 </head>
 
 <body class="bg-gray-100 max-w-screen-2xl mx-auto">
+
+  <!-- Preloader -->
+  <section id="preloader"
+    class="fixed inset-0 flex flex-col items-center justify-center bg-slate-50 z-50 max-w-screen-2xl mx-auto">
+    <!-- Logo in Center -->
+    <img src="images/logos/logos_ggu3.png" alt="Logo" class="mb-6 w-28 h-28">
+
+    <!-- Loader Spinner and Loading Text -->
+    <div class="loader flex items-center justify-center space-x-2 mb-6">
+      <div class="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
+      <p class="text-blue-500 font-semibold text-lg animate-pulse">Loading...</p>
+    </div>
+
+    <!-- Faded Background Image at the Bottom -->
+    <div class="absolute inset-x-0 bottom-0 w-full opacity-30 overflow-hidden">
+      <div class="absolute h-1/5 inset-0 bg-gradient-to-t from-transparent to-sky-50 z-50"></div>
+      <img src="images/1.jpg" alt="Background Image" class="w-full h-64 md:h-96 object-cover opacity-80">
+    </div>
+  </section>
 
   <header id="header1" class="z-40"></header>
   <header id="header2" class="sticky top-0 left-0 z-40"></header>
