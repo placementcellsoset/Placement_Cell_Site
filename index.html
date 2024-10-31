@@ -9,22 +9,22 @@
   <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
   <link rel="stylesheet" href="./cdns/aos/aos.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-   <link rel="stylesheet" href="./cdns/swiper/swiper-bundle.css">
+  <link rel="stylesheet" href="./cdns/swiper/swiper-bundle.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
-   <link rel="stylesheet" href="./cdns/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="./cdns/font-awesome/css/font-awesome.css">
 </head>
 
 <body class="bg-gray-100 max-w-screen-2xl mx-auto">
 
   <header id="header1" class="z-40"></header>
-  <header id="header2" class=" sticky top-0 left-0 z-40"></header>
+  <header id="header2" class="sticky top-0 left-0 z-40"></header>
 
 
   <section id="announcements"></section>
 
 
   <!-- Hero Video Section -->
-  <section class="relative h-[350px] max-w-screen-2xl w-full mx-auto" data-aos="zoom-in-up" data-aos-duration="1500">
+  <section class="relative h-[350px] max-w-screen-2xl w-full mx-auto">
     <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
       <source src="./hero.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
@@ -33,24 +33,28 @@
 
     <!-- Centered Logos Section -->
     <div class="text-center relative z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+
       <!-- Logos -->
-      <div class="flex justify-center items-center space-x-4 mb-4">
+      <div class="flex justify-center items-center space-x-4 mb-4" data-aos="fade-up" data-aos-delay="200">
         <img src="./images/logos/logos_naac.png" alt="Logo 1" class="w-20 sm:w-24 h-auto">
         <img src="./images/logos/logos_ugc.png" alt="Logo 2" class="w-20 sm:w-24 h-auto">
       </div>
 
       <!-- Text Content -->
-      <h1 class="text-4xl font-bold text-white hidden sm:block">
+      <h1 class="text-4xl font-bold text-white hidden sm:block" data-aos="fade-up" data-aos-delay="400"
+        data-aos-once="true">
         Training & Placement Cell, SOSET
       </h1>
-      <h1 class="text-4xl font-bold text-white block sm:hidden">
+      <h1 class="text-4xl font-bold text-white block sm:hidden" data-aos="fade-up" data-aos-delay="400"
+        data-aos-once="true">
         T&P Cell, SOSET
       </h1>
-      <p class="text-lg text-gray-300 mt-2">
+      <p class="text-lg text-gray-300 mt-2" data-aos="fade-up" data-aos-delay="600" data-aos-once="true">
         Guru Ghasidas Vishwavidyalaya, Bilaspur
       </p>
-      <div class="mt-6">
-        <a href="https://forms.gle/hjZi6rxityPHLFAA7" target="_blank" class="bg-blue-500 text-white px-6 py-3 rounded-md ml-4">Hire a
+      <div class="mt-6" data-aos="fade-zoom-in" data-aos-delay="1200" data-aos-offset="0">
+        <a href="https://forms.gle/hjZi6rxityPHLFAA7" target="_blank"
+          class="bg-blue-500 text-white px-6 py-3 rounded-md ml-4">Hire a
           Talent</a>
       </div>
     </div>
@@ -58,36 +62,37 @@
 
 
   <!-- About Section -->
-  <section class=" py-20 px-8 md:px-16">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Overview</h2>
-      <p class="text-justify hyphens-auto text-lg text-gray-700 mb-6">
+  <section class="py-20 px-8 md:px-16" data-aos="fade-up">
+    <div class="container mx-auto" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="text-3xl font-bold text-center mb-8 text-gray-800" data-aos="fade-up" data-aos-delay="200">
+        Overview
+      </h2>
+      <p class="text-justify hyphens-auto text-lg text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="300">
         The Training & Placement Cell, School of Studies of Engineering & Technology (T&P Cell, SOSET) of Guru
         Ghasidas Vishwavidyalaya, Bilaspur, is dedicated to facilitating student placements across various
         disciplines of Engineering. The T&P Cell, SOSET collaborates with leading
         organizations to provide internship & training opportunities, ensuring students are career-ready.
       </p>
-      <p class="text-justify hyphens-auto text-lg text-gray-700 mb-6">
+      <p class="text-justify hyphens-auto text-lg text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="400">
         The placement season runs from <b>late July to March</b>, during which numerous companies conduct campus
         interviews. The T&P Cell, SOSET is equipped with modern facilities for group discussions & interviews, & it
         organizes pre-placement talks to foster interaction between students & potential employers.
       </p>
-      <p class="text-justify hyphens-auto text-lg text-gray-700 mb-8">
+      <p class="text-justify hyphens-auto text-lg text-gray-700 mb-8" data-aos="fade-up" data-aos-delay="500">
         A committee of student representatives from undergraduate programs supports the T&P Cell,
         SOSET in developing annual policies & guidelines for the placement process. This collaboration ensures that
         student feedback is integral to decision-making.
       </p>
 
-
-      <div class="pt-8 sm:pt-16">
+      <div class="pt-8 sm:pt-16" data-aos="fade-up" data-aos-delay="600">
         <h3 class="text-3xl font-bold text-center mb-8 text-gray-800">Key Activities</h3>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
-          <div class="overflow-hidden group cursor-pointer">
+          <!-- Skill Development Programs Card -->
+          <div class="overflow-hidden group cursor-pointer" data-aos="zoom-in" data-aos-delay="700">
             <div class="relative group rounded-lg overflow-hidden">
               <img src="./images/skill_development.jpg" alt="Skill Development Programs"
                 class="w-full h-60 object-cover" />
-              <!-- Reduced overlay opacity from 50% to 30% & icon color changes on hover -->
               <div
                 class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center rounded-lg transition-opacity duration-300">
                 <i
@@ -98,12 +103,14 @@
               </div>
               <p
                 class="text-white text-md text-center transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute bottom-4 left-0 right-0">
-                Offering communication skill development from the first semester.</p>
+                Offering communication skill development from the first semester.
+              </p>
             </div>
             <h4 class="text-center text-lg font-bold text-gray-800 mt-4">Skill Development Programs</h4>
           </div>
 
-          <div class="overflow-hidden group cursor-pointer">
+          <!-- Mock Interviews Card -->
+          <div class="overflow-hidden group cursor-pointer" data-aos="zoom-in" data-aos-delay="800">
             <div class="relative group rounded-lg overflow-hidden">
               <img src="./images/mock_interview.jpeg" alt="Mock Interviews" class="w-full h-60 object-cover" />
               <div
@@ -116,12 +123,14 @@
               </div>
               <p
                 class="text-white text-md text-center transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute bottom-4 left-0 right-0">
-                Organizing mock interviews & aptitude tests for pre-final & final-year students.</p>
+                Organizing mock interviews & aptitude tests for pre-final & final-year students.
+              </p>
             </div>
             <h4 class="text-center text-lg font-bold text-gray-800 mt-4">Mock Interviews</h4>
           </div>
 
-          <div class="overflow-hidden group cursor-pointer">
+          <!-- Industry Interaction Programs Card -->
+          <div class="overflow-hidden group cursor-pointer" data-aos="zoom-in" data-aos-delay="900">
             <div class="relative group rounded-lg overflow-hidden">
               <img src="./images/industry_interaction.jpeg" alt="Industry Interaction Programs"
                 class="w-full h-60 object-cover" />
@@ -135,7 +144,8 @@
               </div>
               <p
                 class="text-white text-md text-center transform translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-transform duration-300 absolute bottom-4 left-0 right-0">
-                Facilitating interactions between students & industry professionals.</p>
+                Facilitating interactions between students & industry professionals.
+              </p>
             </div>
             <h4 class="text-center text-lg font-bold text-gray-800 mt-4">Industry Interaction Programs</h4>
           </div>
@@ -147,17 +157,18 @@
 
   <!-- Message Section -->
   <section class="px-0 md:px-16 py-16">
-    <h2 class="text-3xl font-bold text-center mb-8">Message From Heads</h2>
+    <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Message From Heads</h2>
     <div
       class="relative flex flex-row overflow-auto hide-scrollbar h-[650px] sm:h-[500px] w-full space-x-2 p-0 sm:p-2 border-2 rounded-md snap-mandatory snap-x">
 
       <!-- First Div -->
       <div
-        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start">
+        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start"
+        data-aos="zoom-in" data-aos-delay="100">
         <img src="./images/vc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
         <div class="absolute inset-0 bg-black opacity-70"></div>
 
-        <!-- Circular Div in Center of Third Div -->
+        <!-- Circular Div in Center of First Div -->
         <div
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
           <img src="./images/vc.png" alt="Circular Image" class="w-full h-full object-cover">
@@ -168,7 +179,7 @@
           <img src="./images/vc.png" alt="Circular Image" class="w-full h-full object-cover">
         </div>
 
-        <!-- Message Overlay for Third Div -->
+        <!-- Message Overlay for First Div -->
         <div
           class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-100 group-hover:opacity-0">
           <i class="fas fa-quote-left text-2xl mb-2"></i>
@@ -204,11 +215,12 @@
 
       <!-- Second Div -->
       <div
-        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start">
+        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start"
+        data-aos="zoom-in" data-aos-delay="200">
         <img src="./images/dean.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
         <div class="absolute inset-0 bg-black opacity-70"></div>
 
-        <!-- Circular Div in Center of Third Div -->
+        <!-- Circular Div in Center of Second Div -->
         <div
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
           <img src="./images/dean.png" alt="Circular Image" class="w-full h-full object-cover">
@@ -219,7 +231,7 @@
           <img src="./images/dean.png" alt="Circular Image" class="w-full h-full object-cover">
         </div>
 
-        <!-- Message Overlay for Third Div -->
+        <!-- Message Overlay for Second Div -->
         <div
           class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-100 group-hover:opacity-0">
           <i class="fas fa-quote-left text-2xl mb-2"></i>
@@ -258,7 +270,8 @@
 
       <!-- Third Div -->
       <div
-        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start">
+        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start"
+        data-aos="zoom-in" data-aos-delay="300">
         <img src="./images/pc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
         <div class="absolute inset-0 bg-black opacity-70"></div>
 
@@ -310,7 +323,6 @@
           </p>
         </div>
       </div>
-
     </div>
   </section>
 
@@ -319,7 +331,7 @@
   <section class="w-full h-auto px-8 sm:px-16 py-8 sm:py-16" id="why-recruit">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-14 mx-auto">
       <!-- Left Side -->
-      <div class="space-y-6">
+      <div class="space-y-6" data-aos="fade-right">
         <h2 class="text-2xl font-extrabold text-gray-800 tracking-wide animate-fade-in pt-4">
           WHY GURU GHASIDAS VISHWAVIDYALAYA
         </h2>
@@ -332,7 +344,8 @@
           graduates have on society—making us consistently ranked
           <span class="text-xl font-bold text-gray-800">No.1</span>.
         </p>
-        <div class="mt-6 flex flex-col gap-4 sm:flex-row justify-center items-center sm:justify-start">
+        <div class="mt-6 flex flex-col gap-4 sm:flex-row justify-center items-center sm:justify-start"
+          data-aos="fade-up">
           <a href="https://www.ggu.ac.in/SiteMap.aspx" target="_blank"
             class="w-full sm:w-auto px-6 py-3 bg-blue-600 text-white rounded-md shadow-lg hover:bg-blue-500 hover:scale-105 transform transition-all ease-in-out duration-300 flex items-center">
             <i class="fas fa-info-circle mr-2"></i> Read More About GGV
@@ -346,9 +359,10 @@
       </div>
 
       <!-- Right Side Stats -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-6" data-aos="fade-left">
         <!-- Stat 1 -->
-        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300"
+          data-aos="zoom-in">
           <div class="bg-yellow-500 text-white p-4 shadow-lg rounded">
             <p class="text-2xl font-bold"><i class="fas fa-trophy"></i></p>
           </div>
@@ -359,7 +373,8 @@
         </div>
 
         <!-- Stat 2 -->
-        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300"
+          data-aos="zoom-in">
           <div class="bg-green-500 text-white p-4 shadow-lg rounded">
             <p class="text-2xl font-bold"><i class="fas fa-chart-line"></i></p>
           </div>
@@ -370,7 +385,8 @@
         </div>
 
         <!-- Stat 3 -->
-        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300"
+          data-aos="zoom-in">
           <div class="bg-purple-500 text-white p-4 shadow-lg rounded">
             <p class="text-2xl font-bold"><i class="fas fa-university"></i></p>
           </div>
@@ -381,7 +397,8 @@
         </div>
 
         <!-- Stat 4 -->
-        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300"
+          data-aos="zoom-in">
           <div class="bg-red-500 text-white p-4 shadow-lg rounded">
             <p class="text-2xl font-bold"><i class="fas fa-rocket"></i></p>
           </div>
@@ -392,7 +409,8 @@
         </div>
 
         <!-- Stat 5 -->
-        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300"
+          data-aos="zoom-in">
           <div class="bg-blue-500 text-white p-4 shadow-lg rounded">
             <p class="text-2xl font-bold"><i class="fas fa-users"></i></p>
           </div>
@@ -403,7 +421,8 @@
         </div>
 
         <!-- Stat 6 -->
-        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300">
+        <div class="flex items-center space-x-6 transform hover:scale-105 transition-transform duration-300"
+          data-aos="zoom-in">
           <div class="bg-teal-500 text-white p-4 shadow-lg rounded">
             <p class="text-2xl font-bold"><i class="fas fa-globe"></i></p>
           </div>
@@ -414,53 +433,57 @@
         </div>
       </div>
     </div>
-
-    <div class="mt-8 sm:mt-16 max-w-screen-2xl w-full mx-auto overflow-hidden">
+    <div id="student-achievements"></div>
+    <div class="mt-8 sm:mt-16 max-w-screen-2xl w-full mx-auto overflow-hidden" data-aos="fade-up">
       <h3 class="text-2xl font-extrabold text-gray-800 tracking-wide mb-4">Student Achievements</h3>
       <!-- Slider container -->
-      <div class="swiper-container w-full h-48 overflow-hidden">
+      <div class="swiper-container w-full h-48 overflow-hidden" data-aos="fade-up">
         <div class="swiper-wrapper">
           <!-- Hardcoded slides with skeletons -->
-          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading...">
+          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading..."
+            data-aos="zoom-in">
             <div class="w-full h-full bg-gray-300 animate-pulse skeleton"></div>
             <img src="" alt="Loading..." class="w-full h-full object-cover group-hover:scale-105" />
           </div>
 
-          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading...">
+          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading..."
+            data-aos="zoom-in">
             <div class="w-full h-full bg-gray-300 animate-pulse skeleton"></div>
             <img src="" alt="Loading..." class="w-full h-full object-cover group-hover:scale-105" />
           </div>
 
-          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading...">
+          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading..."
+            data-aos="zoom-in">
             <div class="w-full h-full bg-gray-300 animate-pulse skeleton"></div>
             <img src="" alt="Loading..." class="w-full h-full object-cover group-hover:scale-105" />
           </div>
 
-          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading...">
+          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading..."
+            data-aos="zoom-in">
             <div class="w-full h-full bg-gray-300 animate-pulse skeleton"></div>
             <img src="" alt="Loading..." class="w-full h-full object-cover group-hover:scale-105" />
           </div>
 
-          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading...">
+          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading..."
+            data-aos="zoom-in">
             <div class="w-full h-full bg-gray-300 animate-pulse skeleton"></div>
             <img src="" alt="Loading..." class="w-full h-full object-cover group-hover:scale-105" />
           </div>
 
-          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading...">
+          <div class="swiper-slide w-72 h-full rounded-lg border overflow-hidden group" title="Loading..."
+            data-aos="zoom-in">
             <div class="w-full h-full bg-gray-300 animate-pulse skeleton"></div>
             <img src="" alt="Loading..." class="w-full h-full object-cover group-hover:scale-105" />
           </div>
-
         </div>
       </div>
     </div>
-
   </section>
 
 
   <!-- Past Recruiters Section -->
-  <section class="py-8 sm:py-16 max-w-screen-2xl w-full mx-auto overflow-hidden" data-aos="fade-up">
-    <div class="container mx-auto">
+  <section class="py-8 sm:py-16 max-w-screen-2xl w-full mx-auto overflow-hidden" data-aos="fade-up" id="past-recruiters">
+    <div class="container mx-auto" data-aos="fade-up" data-aos-delay="100">
       <h2 class="text-3xl font-bold text-center mb-8">
         Our Past Recruiters
       </h2>
@@ -641,9 +664,9 @@
 
 
   <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-   <script src="./cdns/swiper/swiper-bundle.js"></script>
+  <script src="./cdns/swiper/swiper-bundle.js"></script>
   <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
-   <script src="./cdns/aos/aos.js"></script>
+  <script src="./cdns/aos/aos.js"></script>
   <script src="./js/common.js"></script>
   <script src="./js/index.js"></script>
 </body>

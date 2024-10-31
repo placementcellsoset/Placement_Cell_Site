@@ -8,9 +8,9 @@
     <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
-     <link rel="stylesheet" href="./cdns/swiper/swiper-bundle.css">
-     <link rel="stylesheet" href="./cdns/font-awesome/css/font-awesome.css">
-     <link rel="stylesheet" href="./cdns/aos/aos.css">
+    <link rel="stylesheet" href="./cdns/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="./cdns/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="./cdns/aos/aos.css">
     <link rel="stylesheet" href="dist/output.css" />
 </head>
 
@@ -25,18 +25,30 @@
 
     <div class="flex flex-col md:flex-row max-w-screen-2xl w-full mx-auto">
         <aside
-            class="bg-gray-800 md:max-h-screen md:w-1/5 sticky top-16 p-0 sm:p-4 h-auto md:h-screen overflow-y-auto z-10 hidden md:block">
+            class="bg-gray-800 md:max-h-screen md:w-1/5 sticky top-16 p-0 sm:p-4 h-auto md:h-screen overflow-y-auto z-10 hidden md:block"
+            data-aos="fade-right" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="200"
+            data-aos-once="true">
             <nav class="flex flex-col space-y-4">
-                <a href="#overview" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
-                    <i class="fas fa-chart-pie mr-2"></i>Overview</a>
-                <a href="#placement-stats" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
-                    <i class="fas fa-briefcase mr-2"></i>Placement Stats</a>
-                <a href="#branch-distribution" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
-                    <i class="fas fa-sitemap mr-2"></i>Branch Distribution</a>
-                <a href="#alumi-placements" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
-                    <i class="fas fa-building mr-2"></i>Alumni Placements</a>
-                <a href="#alumi-spotlight" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center">
-                    <i class="fas fa-star mr-2"></i>Alumni Spotlight</a>
+                <a href="#overview" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="500" data-aos-once="true">
+                    <i class="fas fa-chart-pie mr-2"></i>Overview
+                </a>
+                <a href="#placement-stats" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="600" data-aos-once="true">
+                    <i class="fas fa-briefcase mr-2"></i>Placement Stats
+                </a>
+                <a href="#branch-distribution" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="700" data-aos-once="true">
+                    <i class="fas fa-sitemap mr-2"></i>Branch Distribution
+                </a>
+                <a href="#alumi-placements" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="800" data-aos-once="true">
+                    <i class="fas fa-building mr-2"></i>Alumni Placements
+                </a>
+                <a href="#alumi-spotlight" class="text-white hover:bg-gray-700 p-3 rounded-md flex items-center"
+                    data-aos="zoom-in" data-aos-duration="700" data-aos-delay="900" data-aos-once="true">
+                    <i class="fas fa-star mr-2"></i>Alumni Spotlight
+                </a>
             </nav>
         </aside>
 
@@ -44,24 +56,24 @@
 
             <!-- Overview/Top Stats Section -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="overview">
-                <div
-                    class="flex items-center justify-between bg-white text-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center justify-between bg-white text-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+                    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
                     <i class="fas fa-user-graduate text-4xl text-teal-600"></i>
                     <div class="text-right">
                         <h4 class="text-md font-semibold">Total Students</h4>
                         <p class="text-2xl font-bold">2,356</p>
                     </div>
                 </div>
-                <div
-                    class="flex items-center justify-between bg-white text-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center justify-between bg-white text-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+                    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out-cubic" data-aos-delay="100">
                     <i class="fas fa-venus-mars text-4xl text-teal-600"></i>
                     <div class="text-right">
                         <h4 class="text-md font-semibold">Male/Female Ratio</h4>
                         <p class="text-2xl font-bold">60% / 40%</p>
                     </div>
                 </div>
-                <div
-                    class="flex items-center justify-between bg-white text-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300">
+                <div class="flex items-center justify-between bg-white text-gray-800 rounded-lg shadow-md p-6 hover:shadow-xl transition-shadow duration-300"
+                    data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-out-cubic" data-aos-delay="200">
                     <i class="fas fa-briefcase text-4xl text-teal-600"></i>
                     <div class="text-right">
                         <h4 class="text-md font-semibold">Placement Rate</h4>
@@ -70,9 +82,9 @@
                 </div>
             </div>
 
-
             <!-- Demographics Overview Section -->
-            <div class="bg-white p-6 shadow-lg rounded-lg">
+            <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-easing="ease-in-sine" data-aos-delay="200">
                 <h2 class="text-2xl font-semibold text-teal-800 mb-4">Demographics Overview</h2>
                 <p class="text-gray-600">Guru Ghasidas Vishwavidyalaya has a diverse student population, with over
                     2,356 students enrolled across various disciplines. The gender distribution reveals a 60:40
@@ -82,11 +94,11 @@
                     enrollments, emphasizing the growing demand for quality education at the university.</p>
             </div>
 
-
             <!-- Placement Stats Chart Section-->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="placement-stats">
                 <!-- Yearly Placement Chart -->
-                <div id="admission-trend">
+                <div id="admission-trend" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                    data-aos-delay="400">
                     <h3 class="text-lg font-semibold text-teal-800 mb-2 text-center">Yearly Placement</h3>
                     <div class="bg-white p-4 shadow-lg rounded-lg">
                         <canvas id="admissionChart" class="w-full h-[300px]"></canvas>
@@ -94,7 +106,7 @@
                 </div>
 
                 <!-- Placement Stats Chart -->
-                <div>
+                <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-delay="600">
                     <h3 class="text-lg font-semibold text-teal-800 mb-2 text-center">Placement Stats</h3>
                     <div class="bg-white p-4 shadow-lg rounded-lg">
                         <canvas id="placementChart" class="w-full h-[300px]"></canvas>
@@ -102,36 +114,37 @@
                 </div>
             </div>
 
-
             <!-- Branch/Gender Distribution Chart Section-->
-            <div id="branch-distribution" class="mt-6 h-auto w-full">
+            <div id="branch-distribution" class="mt-6 h-auto w-full" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-easing="ease-in-out" data-aos-delay="600">
                 <h3 id="chart-title" class="text-lg font-semibold text-teal-800 mb-2 text-center">Branch/Gender
                     Distribution</h3>
                 <div class="bg-white p-4 shadow-lg rounded-lg h-auto w-full">
-
-                    <!-- removing this wrapper div is causing the chart to grow anomalously -->
-                    <div><canvas id="branchChart" class="w-full h-[300px]"></canvas></div>
-
-                    <!-- Info Section below the chart -->
-                    <div class="flex justify-between bg-blue-100 rounded-lg p-1 pl-5 mt-2 h-12 w-full">
+                    <div><canvas id="branchChart" class="w-full h-[300px]" data-aos="zoom-in" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-delay="400"></canvas></div>
+                    <div class="flex justify-between bg-blue-100 rounded-lg p-1 pl-5 mt-2 h-12 w-full"
+                        data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200">
                         <div class="text-blue-800 flex items-center ">
                             <i class="fas fa-info-circle text-blue-500 mr-2"></i>
-                            <p class=" font-semibold">Click branch to know its gender distribution</p>
+                            <p class="font-semibold">Click branch for gender data</p>
                         </div>
-                        <button id="backToBranchBtn" class="bg-teal-800 text-white px-4 py-2 rounded-lg hidden"
-                            onclick="resetBranchChart()">Back to Branch</button>
+                        <button id="backToBranchBtn" class="bg-teal-800 text-white px-4 py-1 rounded-lg hidden"
+                            onclick="resetBranchChart()">
+                            <i class="fa-solid fa-circle-left text-lg"></i>
+                            <p class="hidden sm:inline pl-1">Back to Branch</p>
+                        </button>
                     </div>
-
                 </div>
             </div>
 
-
             <!-- Alumni Placements Section: Our Esteemed Alumni Are Placed in These Companies -->
-            <div id="alumi-placements" class="bg-white p-6 shadow-lg rounded-lg mt-6 mx-auto w-full overflow-hidden">
-                <h2 class="text-2xl font-semibold text-teal-800 mb-4">Our Esteemed Alumni Are Placed in These
-                    Companies
+            <div id="alumi-placements" class="bg-white p-6 shadow-lg rounded-lg mt-6 mx-auto w-full overflow-hidden"
+                data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="600">
+                <h2 class="text-2xl font-semibold text-teal-800 mb-4">Our Esteemed Alumni Are Placed in These Companies
                 </h2>
-                <p class="text-gray-600 mb-4">Explore the remarkable achievements of our alumni, who have secured
+
+                <p class="text-gray-600 mb-4" data-aos="fade-up" data-aos-delay="200">Explore the remarkable
+                    achievements of our alumni, who have secured
                     impactful roles in over 150 of the world’s leading companies, including top <b>Fortune 500</b>
                     giants like
                     <b>Google, Amazon, Facebook, Microsoft,</b> and <b>Apple.</b> Our graduates have left their mark
@@ -140,22 +153,24 @@
                     ranging from technology and finance to healthcare and consulting, contributing to the success of
                     companies like <b>JP-Morgan Chase, Deloitte,</b> and <b>Goldman Sachs.</b>
                 </p>
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-600 mb-4" data-aos="fade-up" data-aos-delay="200">
                     With representation in more than 25
                     countries globally, our alumni network spans across high-growth startups and established
                     industry
                     leaders alike. Their contributions continue to shape innovation, strategy, and leadership in
                     today's
                     most influential organizations.</p>
-                <div class="space-y-4">
-                    <div class="flex flex-wrap gap-2" id="alphabetButtonsContainer">
+
+                <div class="space-y-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex flex-wrap gap-2" id="alphabetButtonsContainer" data-aos="fade-up"
+                        data-aos-delay="500">
                         <!-- Alphabet buttons will be dynamically generated here -->
                     </div>
 
                     <!-- Employers Display Area -->
-                    <div id="employersDisplay" class="bg-gray-100 p-4 mt-4 rounded-lg">
-                        <h3 id="employerLetterTitle" class="text-lg font-semibold text-teal-800 mb-2">Employers
-                            Starting
+                    <div id="employersDisplay" class="bg-gray-100 p-4 mt-4 rounded-lg" data-aos="fade-up"
+                        data-aos-delay="600">
+                        <h3 id="employerLetterTitle" class="text-lg font-semibold text-teal-800 mb-2">Employers Starting
                             With "A"</h3>
                         <ul id="employersList" class="list-disc pl-5 text-gray-700">
                             <!-- Dynamically populated employers list will be inserted here via JavaScript -->
@@ -164,9 +179,9 @@
                 </div>
             </div>
 
-
             <!-- Alumni Spotlight Section: Meet Our Esteemed Alumni Section -->
-            <div class="bg-white p-6 shadow-lg rounded-lg mt-6 mx-auto w-full h-auto relative" id="alumi-spotlight">
+            <div class="bg-white p-6 shadow-lg rounded-lg mt-6 mx-auto w-full h-auto relative" id="alumi-spotlight"
+                data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" data-aos-delay="600">
                 <h2 class="text-2xl font-semibold text-teal-800 mb-4">Meet Some of Our Esteemed Alumni</h2>
                 <p class="text-gray-600 mb-4">Discover the remarkable journeys of our esteemed alumni and delve into
                     their inspiring career paths and notable accomplishments that showcase their dedication and success.
@@ -290,19 +305,20 @@
                 <div class="swiper-pagination absolute bottom-0"></div>
             </div>
 
+
         </main>
     </div>
 
 
     <footer id="footer"></footer>
 
-    
+
     <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-     <script src="./cdns/swiper/swiper-bundle.js"></script>
+    <script src="./cdns/swiper/swiper-bundle.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-     <script src="./cdns/chart/chart.js"></script>
+    <script src="./cdns/chart/chart.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
-     <script src="./cdns/aos/aos.js"></script>
+    <script src="./cdns/aos/aos.js"></script>
     <script src="./js/common.js"></script>
     <script src="./js/demographics.js"></script>
 </body>

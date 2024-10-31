@@ -35,9 +35,9 @@ function saveDataToLocalStorage(data) {
 }
 
 // Helper function to check if data is recent
-function isDataExpired(storedData, expirationInMinutes = 60) {
+function isDataExpired(storedData) {
     const now = new Date().getTime();
-    const expirationTime = expirationInMinutes * 60 * 1000; // Convert minutes to milliseconds
+    const expirationTime = 3 * 60 * 60 * 1000; // 3 hours
     return now - storedData.timestamp > expirationTime;
 }
 

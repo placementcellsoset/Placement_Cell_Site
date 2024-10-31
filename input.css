@@ -34,14 +34,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    /* outline: none; */
-    /* border: 0; */
     text-decoration: none;
     list-style: none;
     transition: all .4s ease-out;
     scroll-behavior: smooth;
     -webkit-tap-highlight-color: transparent;
-    /* cursor: none; */
     user-select: text;
 }
 
@@ -49,12 +46,16 @@ html {
     overflow-x: hidden;
 }
 
-html::-webkit-scrollbar{
+body {
+    overflow-x: clip;
+}
+
+body::-webkit-scrollbar {
     width: 6px;
     background-color: #f1f1f1;
 }
 
-html::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
     background-color: #888;
 }
 
@@ -79,6 +80,6 @@ html::-webkit-scrollbar-thumb{
 
 /* Icon rotation */
 .rotate-180 {
-  transform: rotate(180deg);
-  transition: transform 0.3s ease-in-out;
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
 }
