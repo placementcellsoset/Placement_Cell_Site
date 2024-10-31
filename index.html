@@ -5,13 +5,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GGV Placement Cell</title>
-  <link rel="stylesheet" href="dist/output.css" />
+
+   <!-- Favicon -->
+   <link rel="icon" href="favicon.ico?" type="image/x-icon">
+   <link rel="shortcut icon" href="favicon.ico?" type="image/x-icon">
+ 
+   <!-- Stylesheets -->
   <!-- <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" /> -->
-  <link rel="stylesheet" href="./cdns/aos/aos.css">
   <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
-  <link rel="stylesheet" href="./cdns/swiper/swiper-bundle.css">
   <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+  <link rel="stylesheet" href="./cdns/aos/aos.css">
+  <link rel="stylesheet" href="./cdns/swiper/swiper-bundle.css">
   <link rel="stylesheet" href="./cdns/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="dist/output.css" />
+
+  <!-- Scripts -->
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
+  <script src="./cdns/swiper/swiper-bundle.js" defer></script>
+  <script src="./cdns/aos/aos.js" defer></script>
+  <script src="./js/common.js" defer></script>
+  <script src="./js/index.js" defer></script>
 </head>
 
 <body class="bg-gray-100 max-w-screen-2xl mx-auto">
@@ -159,170 +173,180 @@
   <section class="px-0 md:px-16 py-16">
     <h2 class="text-3xl font-bold text-center mb-8" data-aos="fade-up">Message From Heads</h2>
     <div
-      class="relative flex flex-row overflow-auto hide-scrollbar h-[650px] sm:h-[500px] w-full space-x-2 p-0 sm:p-2 border-2 rounded-md snap-mandatory snap-x">
+      class="relative flex flex-row overflow-auto hide-scrollbar h-[650px] sm:h-[500px] w-full space-x-2 p-0 sm:p-2 border-2 rounded-md snap-mandatory snap-x"
+      data-aos="fade-up">
 
       <!-- First Div -->
-      <div
-        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start"
-        data-aos="zoom-in" data-aos-delay="100">
-        <img src="./images/vc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+      <div class="flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start">
+        <div class="relative w-full h-full" data-aos="zoom-in" data-aos-delay="100">
+          <img src="./images/vc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
 
-        <!-- Circular Div in Center of First Div -->
-        <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
-          <img src="./images/vc.png" alt="Circular Image" class="w-full h-full object-cover">
-        </div>
+          <!-- Circular Div in Center of First Div -->
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
 
-        <div
-          class="absolute left-4 top-4 opacity-0 w-16 h-16 overflow-hidden rounded-full border-2 border-white transition-all duration-75 group-hover:opacity-100">
-          <img src="./images/vc.png" alt="Circular Image" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Message Overlay for First Div -->
-        <div
-          class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-100 group-hover:opacity-0">
-          <i class="fas fa-quote-left text-2xl mb-2"></i>
-          <p class="text-lg font-semibold">Prof. A. K. Chakrawal,<br>Vice Chancellor, GGV</p>
-          <a href="https://www.linkedin.com/in/prof-alok-kumar-chakrawal-27627215/" target="_blank">
-            <i class="fab fa-linkedin text-xl mt-2"></i>
-          </a>
-        </div>
-        <div
-          class="absolute left-24 top-5 flex justify-start items-center w-60 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-0 group-hover:opacity-100">
-          <div class="flex flex-col w-3/4 h-full justify-start items-start border-r-2 border-white">
-            <p class="text-sm font-semibold">Prof. A. K. Chakrawal</p>
-            <p class="text-sm font-semibold">Vice Chancellor, GGV</p>
+            <img src="./images/vc.png" alt="Circular Image" class="w-full h-full object-cover">
           </div>
-          <a href="https://www.linkedin.com/in/prof-alok-kumar-chakrawal-27627215/" target="_blank" class="pl-4">
-            <i class="fab fa-linkedin text-xl mt-2"></i>
-          </a>
-        </div>
-        <div
-          class="absolute left-1/2 top-24 -translate-x-1/2 opacity-0 group-hover:opacity-100 w-11/12 overflow-hidden z-10 transition-all duration-75">
-          <p class="text-white text-sm font-semibold text-justify hyphens-auto leading-7">Guru Ghasidas Vishwavidyalaya
-            is
-            the Central University of Chhattisgarh which bears the principal charge of providing job-oriented education,
-            taking care of the educational aspirations, propagation of quality education, & enlightenment of the
-            people
-            of local society & remote areas.
-            <br />
-            We shall comprehensively make efforts to grow this University, named after the great saint Baba Guru
-            Ghasidasji, like a banyan tree of higher learning at the national & international level.
-          </p>
+
+          <div
+            class="absolute left-4 top-4 opacity-0 w-16 h-16 overflow-hidden rounded-full border-2 border-white transition-all duration-75 group-hover:opacity-100">
+            <img src="./images/vc.png" alt="Circular Image" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Message Overlay for First Div -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center group-hover:hidden">
+            <i class="fas fa-quote-left text-2xl mb-2"></i>
+            <p class="text-lg font-semibold">Prof. A. K. Chakrawal,<br>Vice Chancellor, GGV</p>
+            <a href="https://www.linkedin.com/in/prof-alok-kumar-chakrawal-27627215/" target="_blank">
+              <i class="fab fa-linkedin text-xl mt-2"></i>
+            </a>
+          </div>
+          <div
+            class="absolute left-24 top-5 flex justify-start items-center w-60 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-0 group-hover:opacity-100">
+            <div class="flex flex-col w-3/4 h-full justify-start items-start border-r-2 border-white">
+              <p class="text-sm font-semibold">Prof. A. K. Chakrawal</p>
+              <p class="text-sm font-semibold">Vice Chancellor, GGV</p>
+            </div>
+            <a href="https://www.linkedin.com/in/prof-alok-kumar-chakrawal-27627215/" target="_blank" class="pl-4">
+              <i class="fab fa-linkedin text-xl mt-2"></i>
+            </a>
+          </div>
+          <div
+            class="absolute left-1/2 top-24 -translate-x-1/2 opacity-0 group-hover:opacity-100 w-11/12 overflow-hidden z-10 transition-all duration-75">
+            <p class="text-white text-sm font-semibold text-justify hyphens-auto leading-7">Guru Ghasidas
+              Vishwavidyalaya
+              is
+              the Central University of Chhattisgarh which bears the principal charge of providing job-oriented
+              education,
+              taking care of the educational aspirations, propagation of quality education, & enlightenment of the
+              people
+              of local society & remote areas.
+              <br />
+              We shall comprehensively make efforts to grow this University, named after the great saint Baba Guru
+              Ghasidasji, like a banyan tree of higher learning at the national & international level.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- Second Div -->
       <div
-        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start"
-        data-aos="zoom-in" data-aos-delay="200">
-        <img src="./images/dean.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start">
+        <div class="relative w-full h-full" data-aos="zoom-in" data-aos-delay="200">
+          <img src="./images/dean.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
 
-        <!-- Circular Div in Center of Second Div -->
-        <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
-          <img src="./images/dean.png" alt="Circular Image" class="w-full h-full object-cover">
-        </div>
-
-        <div
-          class="absolute left-4 top-4 opacity-0 w-16 h-16 overflow-hidden rounded-full border-2 border-white transition-all duration-75 group-hover:opacity-100">
-          <img src="./images/dean.png" alt="Circular Image" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Message Overlay for Second Div -->
-        <div
-          class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-100 group-hover:opacity-0">
-          <i class="fas fa-quote-left text-2xl mb-2"></i>
-          <p class="text-lg font-semibold">Prof. S. C. Srivastava,<br>Dean, SOSET, GGV</p>
-          <a href="https://www.linkedin.com/in/dr-sharad-chandra-srivastava-028381102/" target="_blank">
-            <i class="fab fa-linkedin text-xl mt-2"></i>
-          </a>
-        </div>
-        <div
-          class="absolute left-24 top-5 flex justify-start items-center w-60 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-0 group-hover:opacity-100">
-          <div class="flex flex-col w-3/4 h-full justify-start items-start border-r-2 border-white">
-            <p class="text-sm font-semibold">Prof. S. C. Srivastava</p>
-            <p class="text-sm font-semibold">Dean, SOSET, GGV</p>
+          <!-- Circular Div in Center of Second Div -->
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
+            <img src="./images/dean.png" alt="Circular Image" class="w-full h-full object-cover">
           </div>
-          <a href="https://www.linkedin.com/in/dr-sharad-chandra-srivastava-028381102/" target="_blank" class="pl-4">
-            <i class="fab fa-linkedin text-xl mt-2"></i>
-          </a>
-        </div>
-        <div
-          class="absolute left-1/2 top-24 -translate-x-1/2 opacity-0 group-hover:opacity-100 w-11/12 overflow-hidden z-10 transition-all duration-75">
-          <p class="text-white text-sm font-semibold text-justify hyphens-auto leading-7">The students of B.Tech, School
-            of Studies in Engineering & Technology, Guru Ghasidas Vishwavidyalaya, Bilaspur are ready to build their
-            encroach upon the professional arena. With uncompromising academic percentages, many bright students from
-            GGV
-            are nurtured as thoughtful techies because of their enthusiasm for the practical applicability of
-            technology,
-            especially computing.
-            <br />
-            If required, they are eager to do things abundant beyond. I am delighted to present this vibrant batch of
-            students to our honoured recruiters. I trust that they will prove they are capable & acceptable for your
-            industry. I'm desperate to welcome you to our campus & have a protracted & mutually propitious bond with
-            you. I firmly believe that the synergy of organizations will work wonders.
-          </p>
+
+          <div
+            class="absolute left-4 top-4 opacity-0 w-16 h-16 overflow-hidden rounded-full border-2 border-white transition-all duration-75 group-hover:opacity-100">
+            <img src="./images/dean.png" alt="Circular Image" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Message Overlay for Second Div -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center group-hover:hidden">
+            <i class="fas fa-quote-left text-2xl mb-2"></i>
+            <p class="text-lg font-semibold">Prof. S. C. Srivastava,<br>Dean, SOSET, GGV</p>
+            <a href="https://www.linkedin.com/in/dr-sharad-chandra-srivastava-028381102/" target="_blank">
+              <i class="fab fa-linkedin text-xl mt-2"></i>
+            </a>
+          </div>
+          <div
+            class="absolute left-24 top-5 flex justify-start items-center w-60 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-0 group-hover:opacity-100">
+            <div class="flex flex-col w-3/4 h-full justify-start items-start border-r-2 border-white">
+              <p class="text-sm font-semibold">Prof. S. C. Srivastava</p>
+              <p class="text-sm font-semibold">Dean, SOSET, GGV</p>
+            </div>
+            <a href="https://www.linkedin.com/in/dr-sharad-chandra-srivastava-028381102/" target="_blank" class="pl-4">
+              <i class="fab fa-linkedin text-xl mt-2"></i>
+            </a>
+          </div>
+          <div
+            class="absolute left-1/2 top-24 -translate-x-1/2 opacity-0 group-hover:opacity-100 w-11/12 overflow-hidden z-10 transition-all duration-75">
+            <p class="text-white text-sm font-semibold text-justify hyphens-auto leading-7">The students of B.Tech,
+              School
+              of Studies in Engineering & Technology, Guru Ghasidas Vishwavidyalaya, Bilaspur are ready to build their
+              encroach upon the professional arena. With uncompromising academic percentages, many bright students from
+              GGV
+              are nurtured as thoughtful techies because of their enthusiasm for the practical applicability of
+              technology,
+              especially computing.
+              <br />
+              If required, they are eager to do things abundant beyond. I am delighted to present this vibrant batch of
+              students to our honoured recruiters. I trust that they will prove they are capable & acceptable for your
+              industry. I'm desperate to welcome you to our campus & have a protracted & mutually propitious bond with
+              you. I firmly believe that the synergy of organizations will work wonders.
+            </p>
+          </div>
         </div>
       </div>
 
       <!-- Third Div -->
       <div
-        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start"
-        data-aos="zoom-in" data-aos-delay="300">
-        <img src="./images/pc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+        class="relative flex-1 min-w-full sm:min-w-fit h-full transition-all hover:flex-[2] group overflow-hidden snap-start">
+        <div class="relative w-full h-full" data-aos="zoom-in" data-aos-delay="300">
+          <img src="./images/pc.png" alt="Image 3" class="absolute inset-0 w-full h-full object-cover blur-sm">
+          <div class="absolute inset-0 bg-black opacity-70"></div>
 
-        <!-- Circular Div in Center of Third Div -->
-        <div
-          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
-          <img src="./images/pc.png" alt="Circular Image" class="w-full h-full object-cover">
-        </div>
-
-        <div
-          class="absolute left-4 top-4 opacity-0 w-16 h-16 overflow-hidden rounded-full border-2 border-white transition-all duration-75 group-hover:opacity-100">
-          <img src="./images/pc.png" alt="Circular Image" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Message Overlay for Third Div -->
-        <div
-          class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-100 group-hover:opacity-0">
-          <i class="fas fa-quote-left text-2xl mb-2"></i>
-          <p class="text-lg font-semibold">Prof. A. K. Kushwaha,<br>TPO, SOSET, GGV</p>
-          <a href="https://www.linkedin.com/in/alok-kushwaha-900a2169/" target="_blank">
-            <i class="fab fa-linkedin text-xl mt-2"></i>
-          </a>
-        </div>
-        <div
-          class="absolute left-24 top-5 flex justify-start items-center w-60 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-0 group-hover:opacity-100">
-          <div class="flex flex-col w-3/4 h-full justify-start items-start border-r-2 border-white">
-            <p class="text-sm font-semibold">Prof. A. K. Kushwaha</p>
-            <p class="text-sm font-semibold">TPO, SOSET, GGV</p>
+          <!-- Circular Div in Center of Third Div -->
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 overflow-hidden rounded-full border-4 border-white transition-all duration-75 group-hover:opacity-0">
+            <img src="./images/pc.png" alt="Circular Image" class="w-full h-full object-cover">
           </div>
-          <a href="https://www.linkedin.com/in/alok-kushwaha-900a2169/" target="_blank" class="pl-4">
-            <i class="fab fa-linkedin text-xl mt-2"></i>
-          </a>
-        </div>
-        <div
-          class="absolute left-1/2 top-24 -translate-x-1/2 opacity-0 group-hover:opacity-100 w-11/12 overflow-hidden z-10 transition-all duration-75">
-          <p class="text-white text-sm font-semibold text-justify hyphens-auto leading-7">I extend a cordial invitation
-            for the
-            placement program at the School of Studies in Engineering & Technology, GGV.
-            We offer recruiters access to a unique bouquet of budding technical minds. Our students constitute the top
-            performers in JEE Mains & a re selected after one of the most rigorous admission processes across the
-            Country.
-            <br />
-            The breadth of talent available here is unparalleled across India, making it the campus-of-Choice for its
-            recruiters. The outstanding faculty, brilliant students, & unique course structure create a perfect
-            environment for developing future technical leaders. I assure you that your expectations will not just be
-            met
-            but will be surpassed substantially. GGV has been known for giving future leaders to the industry in India
-            also abroad.
-          </p>
+
+          <div
+            class="absolute left-4 top-4 opacity-0 w-16 h-16 overflow-hidden rounded-full border-2 border-white transition-all duration-75 group-hover:opacity-100">
+            <img src="./images/pc.png" alt="Circular Image" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Message Overlay for Third Div -->
+          <div
+            class="absolute left-1/2 -translate-x-1/2 bottom-8 sm:bottom-4 flex flex-col items-center justify-end w-64 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center group-hover:hidden">
+            <i class="fas fa-quote-left text-2xl mb-2"></i>
+            <p class="text-lg font-semibold">Prof. A. K. Kushwaha,<br>TPO, SOSET, GGV</p>
+            <a href="https://www.linkedin.com/in/alok-kushwaha-900a2169/" target="_blank">
+              <i class="fab fa-linkedin text-xl mt-2"></i>
+            </a>
+          </div>
+          <div
+            class="absolute left-24 top-5 flex justify-start items-center w-60 p-2 text-white bg-black bg-opacity-40 rounded-lg shadow-lg text-center opacity-0 group-hover:opacity-100">
+            <div class="flex flex-col w-3/4 h-full justify-start items-start border-r-2 border-white">
+              <p class="text-sm font-semibold">Prof. A. K. Kushwaha</p>
+              <p class="text-sm font-semibold">TPO, SOSET, GGV</p>
+            </div>
+            <a href="https://www.linkedin.com/in/alok-kushwaha-900a2169/" target="_blank" class="pl-4">
+              <i class="fab fa-linkedin text-xl mt-2"></i>
+            </a>
+          </div>
+          <div
+            class="absolute left-1/2 top-24 -translate-x-1/2 opacity-0 group-hover:opacity-100 w-11/12 overflow-hidden z-10 transition-all duration-75">
+            <p class="text-white text-sm font-semibold text-justify hyphens-auto leading-7">I extend a cordial
+              invitation
+              for the
+              placement program at the School of Studies in Engineering & Technology, GGV.
+              We offer recruiters access to a unique bouquet of budding technical minds. Our students constitute the top
+              performers in JEE Mains & a re selected after one of the most rigorous admission processes across the
+              Country.
+              <br />
+              The breadth of talent available here is unparalleled across India, making it the campus-of-Choice for its
+              recruiters. The outstanding faculty, brilliant students, & unique course structure create a perfect
+              environment for developing future technical leaders. I assure you that your expectations will not just be
+              met
+              but will be surpassed substantially. GGV has been known for giving future leaders to the industry in India
+              also abroad.
+            </p>
+          </div>
         </div>
       </div>
+
+
     </div>
   </section>
 
@@ -482,7 +506,8 @@
 
 
   <!-- Past Recruiters Section -->
-  <section class="py-8 sm:py-16 max-w-screen-2xl w-full mx-auto overflow-hidden" data-aos="fade-up" id="past-recruiters">
+  <section class="py-8 sm:py-16 max-w-screen-2xl w-full mx-auto overflow-hidden" data-aos="fade-up"
+    id="past-recruiters">
     <div class="container mx-auto" data-aos="fade-up" data-aos-delay="100">
       <h2 class="text-3xl font-bold text-center mb-8">
         Our Past Recruiters
@@ -661,14 +686,6 @@
 
 
   <footer id="footer"></footer>
-
-
-  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
-  <script src="./cdns/swiper/swiper-bundle.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script> -->
-  <script src="./cdns/aos/aos.js"></script>
-  <script src="./js/common.js"></script>
-  <script src="./js/index.js"></script>
 </body>
 
 </html>
