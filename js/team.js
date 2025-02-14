@@ -181,7 +181,7 @@ document.getElementById('next-page').addEventListener('click', () => {
 
 // Initial load
 loadStudentsData();
-console.log("This site is made and deployed by a group of elite developers whic includes:")
+console.log("This site is made and deployed by a group of elite developers which includes:")
 console.log("Saumy Sharma from IT Department 2025 Batch https://www.linkedin.com/in/saumy-sharma/ ")
 console.log("Tanmay Sontakke from CSE Department 2025 Batch https://www.linkedin.com/in/tanmay-sontakke-3b99b4228/ ")
 console.log("Anurag Singh from CSE Department 2025 Batch https://www.linkedin.com/in/anurag-singh-930899235/ ")
