@@ -402,3 +402,9 @@ function initializeAlumni(data) {
         console.error('Error loading alumni data:', error);
     }
 }
+console.log("This site is made and deployed by a group of elite developers whic includes:")
+console.log("Saumy Sharma from IT Department 2025 Batch https://www.linkedin.com/in/saumy-sharma/ ")
+console.log("Tanmay Sontakke from CSE Department 2025 Batch https://www.linkedin.com/in/tanmay-sontakke-3b99b4228/ ")
+console.log("Anurag Singh from CSE Department 2025 Batch https://www.linkedin.com/in/anurag-singh-930899235/ ")
+console.log("Shreyansh Goyal from IT Department 2025 Batch https://www.linkedin.com/in/shreyansh-goyal-11b131229/ ")
+console.log("Surojit Mondal from IT Department 2026 Batch https://www.linkedin.com/in/surojitmondal/ ")
